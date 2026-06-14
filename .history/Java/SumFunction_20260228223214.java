@@ -1,0 +1,12 @@
+public class SumFunction {
+
+    public static int factorialnum(int n) {
+      int fact=1;
+   for (int i=1;i<=n;i++){
+    fact *=1;
+   }return fact;
+    }
+    public static void main(String[] args) {
+   System.out.println("Factorial ="+ factorialnum(8));
+    }
+}

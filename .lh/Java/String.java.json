@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Java/String.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1781412384364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1781412451159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n \r\n-class Main {\r\n+class String {\r\n     public static void main(String[] args) {\r\n         System.out.println(\"Start small. Ship something.\");\r\n     }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1781412384364,
+            "name": "Commit-0",
+            "content": "// Online Java Compiler\r\n// Use this editor to write, compile and run your Java code online\r\n\r\nclass Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Start small. Ship something.\");\r\n    }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "sourceFile": "Java/Linkedlist.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1776943753248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1776944064408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+class TestRun {\r\n+    public static void main(String[] args) {\r\n+\r\n+        System.out.println(\"Program Start\");\r\n+\r\n+        // Simple logic (works everywhere)\r\n+        int a = 10;\r\n+        int b = 20;\r\n+\r\n+        System.out.println(\"Sum = \" + (a + b));\r\n+\r\n+        // Loop example\r\n+        System.out.print(\"Numbers: \");\r\n+        for(int i = 1; i <= 5; i++) {\r\n+            System.out.print(i + \" \");\r\n+        }\r\n+\r\n+        System.out.println(\"\\nProgram End\");\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776952380026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n         // Simple logic (works everywhere)\r\n         int a = 10;\r\n         int b = 20;\r\n \r\n-        System.out.println(\"Sum = \" + (a + b));\r\n+        System.out.println(\"Sum = \" + (a + b));    \r\n \r\n         // Loop example\r\n         System.out.print(\"Numbers: \");\r\n         for(int i = 1; i <= 5; i++) {\r\n@@ -16,109 +16,5 @@\n         }\r\n \r\n         System.out.println(\"\\nProgram End\");\r\n     }\r\n-}\n-public class Linkedlist {\r\n-\r\n-    // Node class\r\n-    static class Node {\r\n-        int data;\r\n-        Node next;\r\n-\r\n-        Node(int data) {\r\n-            this.data = data;\r\n-            this.next = null;\r\n-        }\r\n-    }\r\n-\r\n-    Node head;\r\n-\r\n-    // Insert at end\r\n-    public void insert(int data) {\r\n-        Node newNode = new Node(data);\r\n-\r\n-        if (head == null) {\r\n-            head = newNode;\r\n-            return;\r\n-        }\r\n-\r\n-        Node temp = head;\r\n-        while (temp.next != null) {\r\n-            temp = temp.next;\r\n-        }\r\n-\r\n-        temp.next = newNode;\r\n-    }\r\n-\r\n-    // Display list\r\n-    public void display() {\r\n-        Node temp = head;\r\n-\r\n-        while (temp != null) {\r\n-            System.out.print(temp.data + \" -> \");\r\n-            temp = temp.next;\r\n-        }\r\n-\r\n-        System.out.println(\"null\");\r\n-    }\r\n-\r\n-    // Delete a node\r\n-    public void delete(int key) {\r\n-        if (head == null) return;\r\n-\r\n-        if (head.data == key) {\r\n-            head = head.next;\r\n-            return;\r\n-        }\r\n-\r\n-        Node temp = head;\r\n-\r\n-        while (temp.next != null && temp.next.data != key) {\r\n-            temp = temp.next;\r\n-        }\r\n-\r\n-        if (temp.next != null) {\r\n-            temp.next = temp.next.next;\r\n-        }\r\n-    }\r\n-\r\n-    // Reverse list\r\n-    public void reverse() {\r\n-        Node prev = null;\r\n-        Node current = head;\r\n-        Node next;\r\n-\r\n-        while (current != null) {\r\n-            next = current.next;\r\n-            current.next = prev;\r\n-            prev = current;\r\n-            current = next;\r\n-        }\r\n-\r\n-        head = prev;\r\n-    }\r\n-\r\n-    // Main method\r\n-    public static void main(String[] args) {\r\n-        Linkedlist list = new Linkedlist();\r\n-\r\n-        // Insert elements\r\n-        list.insert(10);\r\n-        list.insert(20);\r\n-        list.insert(30);\r\n-        list.insert(40);\r\n-\r\n-        System.out.println(\"Original List:\");\r\n-        list.display();\r\n-\r\n-        // Delete element\r\n-        list.delete(20);\r\n-        System.out.println(\"After Deleting 20:\");\r\n-        list.display();\r\n-\r\n-        // Reverse list\r\n-        list.reverse();\r\n-        System.out.println(\"After Reversing:\");\r\n-        list.display();\r\n-    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776952575824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-class TestRun {\r\n+class main {\r\n     public static void main(String[] args) {\r\n \r\n         System.out.println(\"Program Start\");\r\n \r\n"
+                },
+                {
+                    "date": 1776952673836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-class main {\r\n+class Linkedlist {\r\n     public static void main(String[] args) {\r\n \r\n         System.out.println(\"Program Start\");\r\n \r\n"
+                },
+                {
+                    "date": 1776952777919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n         // Loop example\r\n         System.out.print(\"Numbers: \");\r\n         for(int i = 1; i <= 5; i++) {\r\n-            System.out.print(i + \" \");\r\n+            System.out.print(i + \"-> \");\r\n         }\r\n \r\n         System.out.println(\"\\nProgram End\");\r\n     }\r\n"
+                },
+                {
+                    "date": 1776952928928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,15 @@\n         System.out.println(\"Sum = \" + (a + b));    \r\n \r\n         // Loop example\r\n         System.out.print(\"Numbers: \");\r\n-        for(int i = 1; i <= 5; i++) {\r\n-            System.out.print(i + \"-> \");\r\n+        int i=1;\r\n+        while(int i!=5){\r\n+          System.out.print(i + \"-> \");\r\n+\r\n         }\r\n+        // for(int i = 1; i <= 5; i++) {\r\n+        // }\r\n \r\n         System.out.println(\"\\nProgram End\");\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776953048896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,11 @@\n class Linkedlist {\r\n+    int val;\r\n+    Node next;\r\n+    Node(int val){\r\n+        this.val=val;\r\n+    }\r\n     public static void main(String[] args) {\r\n-\r\n-        System.out.println(\"Program Start\");\r\n-\r\n-        // Simple logic (works everywhere)\r\n-        int a = 10;\r\n-        int b = 20;\r\n-\r\n-        System.out.println(\"Sum = \" + (a + b));    \r\n-\r\n-        // Loop example\r\n-        System.out.print(\"Numbers: \");\r\n-        int i=1;\r\n-        while(int i!=5){\r\n-          System.out.print(i + \"-> \");\r\n-\r\n-        }\r\n-        // for(int i = 1; i <= 5; i++) {\r\n-        // }\r\n-\r\n-        System.out.println(\"\\nProgram End\");\r\n+   Node a new Node(10);\r\n+   \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776953636997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,33 @@\n-class Linkedlist {\r\n+class Node {\r\n     int val;\r\n     Node next;\r\n-    Node(int val){\r\n-        this.val=val;\r\n+\r\n+    Node(int val) {\r\n+        this.val = val;\r\n+\r\n     }\r\n\\ No newline at end of file\n-    public static void main(String[] args) {\r\n-   Node a new Node(10);\r\n-   \r\n+\r\n+\r\n+public class LinkedList {\r\n+    public static void main(String[] arg) {\r\n+        Node a = new Node(10);\r\n+        Node b = new Node(20);\r\n+        Node c = new Node(20);\r\n+        Node d = new Node(20);\r\n+        Node e = new Node(20);\r\n+        Node f = new Node(20);\r\n+        a.next = b;\r\n+         b.next=c;\r\n+         c.next=d;\r\n+         d.next=e;\r\n+         e.next=f;\r\n+         System.out.println(a);\r\n+                  System.out.println(b);\r\n+         System.out.println(c);\r\n+         System.out.println(d);\r\n+         System.out.println(e);\r\n+         System.out.println(f);\r\n+ \r\n+\r\n     }\r\n-}\n+}}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1776953672046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n          c.next=d;\r\n          d.next=e;\r\n          e.next=f;\r\n          System.out.println(a);\r\n-                  System.out.println(b);\r\n+         System.out.println(b);\r\n          System.out.println(c);\r\n          System.out.println(d);\r\n          System.out.println(e);\r\n          System.out.println(f);\r\n"
+                },
+                {
+                    "date": 1776953745215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class LinkedList {\r\n+public class Linkedlist {\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n"
+                },
+                {
+                    "date": 1776953766561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class Linkedlist {\r\n+public class Linkedlist{\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n"
+                },
+                {
+                    "date": 1776953982981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class Linkedlist{\r\n+public class Nodeof Linkedlist{\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n"
+                },
+                {
+                    "date": 1776953990244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class Nodeof Linkedlist{\r\n+public class Node Linkedlist{\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n"
+                },
+                {
+                    "date": 1776954000671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class Node Linkedlist{\r\n+public class  Linkedlist{\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n"
+                },
+                {
+                    "date": 1776954482729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n     }\r\n \r\n \r\n-public class  Linkedlist{\r\n+public class LinkedList {\r\n     public static void main(String[] arg) {\r\n         Node a = new Node(10);\r\n         Node b = new Node(20);\r\n         Node c = new Node(20);\r\n@@ -21,13 +21,14 @@\n          c.next=d;\r\n          d.next=e;\r\n          e.next=f;\r\n          System.out.println(a);\r\n-         System.out.println(b);\r\n-         System.out.println(c);\r\n-         System.out.println(d);\r\n-         System.out.println(e);\r\n-         System.out.println(f);\r\n- \r\n+                  System.out.println(b);\r\n+         System.out.println();\r\n+         System.out.println();\r\n+         System.out.println();\r\n+         System.out.println();\r\n+         System.out.println();\r\n \r\n+\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1776943753248,
+            "name": "Commit-0",
+            "content": "public class Linkedlist {\r\n\r\n    // Node class\r\n    static class Node {\r\n        int data;\r\n        Node next;\r\n\r\n        Node(int data) {\r\n            this.data = data;\r\n            this.next = null;\r\n        }\r\n    }\r\n\r\n    Node head;\r\n\r\n    // Insert at end\r\n    public void insert(int data) {\r\n        Node newNode = new Node(data);\r\n\r\n        if (head == null) {\r\n            head = newNode;\r\n            return;\r\n        }\r\n\r\n        Node temp = head;\r\n        while (temp.next != null) {\r\n            temp = temp.next;\r\n        }\r\n\r\n        temp.next = newNode;\r\n    }\r\n\r\n    // Display list\r\n    public void display() {\r\n        Node temp = head;\r\n\r\n        while (temp != null) {\r\n            System.out.print(temp.data + \" -> \");\r\n            temp = temp.next;\r\n        }\r\n\r\n        System.out.println(\"null\");\r\n    }\r\n\r\n    // Delete a node\r\n    public void delete(int key) {\r\n        if (head == null) return;\r\n\r\n        if (head.data == key) {\r\n            head = head.next;\r\n            return;\r\n        }\r\n\r\n        Node temp = head;\r\n\r\n        while (temp.next != null && temp.next.data != key) {\r\n            temp = temp.next;\r\n        }\r\n\r\n        if (temp.next != null) {\r\n            temp.next = temp.next.next;\r\n        }\r\n    }\r\n\r\n    // Reverse list\r\n    public void reverse() {\r\n        Node prev = null;\r\n        Node current = head;\r\n        Node next;\r\n\r\n        while (current != null) {\r\n            next = current.next;\r\n            current.next = prev;\r\n            prev = current;\r\n            current = next;\r\n        }\r\n\r\n        head = prev;\r\n    }\r\n\r\n    // Main method\r\n    public static void main(String[] args) {\r\n        Linkedlist list = new Linkedlist();\r\n\r\n        // Insert elements\r\n        list.insert(10);\r\n        list.insert(20);\r\n        list.insert(30);\r\n        list.insert(40);\r\n\r\n        System.out.println(\"Original List:\");\r\n        list.display();\r\n\r\n        // Delete element\r\n        list.delete(20);\r\n        System.out.println(\"After Deleting 20:\");\r\n        list.display();\r\n\r\n        // Reverse list\r\n        list.reverse();\r\n        System.out.println(\"After Reversing:\");\r\n        list.display();\r\n    }\r\n}"
+        }
+    ]
+}

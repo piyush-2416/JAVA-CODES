@@ -1,0 +1,62 @@
+{
+    "sourceFile": "Java/findmaxnumber.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 11,
+            "patches": [
+                {
+                    "date": 1772298647836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1772298744828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,7 @@\n       }\r\n       return max;\r\n     }\r\n     public static void main(String[] args) {\r\n-    System.out.println(\"Max-Number =\"+ findmax(123, 45, 98));\r\n+    System.out.println(\"Max-Number =\"+ findmax(23, 45, 98));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298831141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,15 @@\n public class findmaxnumber {\r\n \r\n       static int findmax(int a ,int b,int c ) {\r\n-      int max = a;\r\n+      if(int max > a){\r\n+        System.out.println(\"a is greater \");\r\n+      }\r\n       if(b>max){\r\n-        System.out.println(\"B is greater\"+b);\r\n+        System.out.println(\"B is greater\"+ b);\r\n       }\r\n       if (c>max){\r\n-        System.out.println(\"c is greater\"+c);\r\n+        System.out.println(\"c is greater\"+ c);\r\n       }\r\n       return max;\r\n     }\r\n     public static void main(String[] args) {\r\n"
+                },
+                {
+                    "date": 1772298846475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n public class findmaxnumber {\r\n \r\n       static int findmax(int a ,int b,int c ) {\r\n-      if(int max > a){\r\n+      if( a > max){\r\n         System.out.println(\"a is greater \");\r\n       }\r\n       if(b>max){\r\n         System.out.println(\"B is greater\"+ b);\r\n"
+                },
+                {
+                    "date": 1772298857707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,8 @@\n public class findmaxnumber {\r\n \r\n       static int findmax(int a ,int b,int c ) {\r\n-      if( a > max){\r\n-        System.out.println(\"a is greater \");\r\n-      }\r\n+      int max = a;\r\n       if(b>max){\r\n         System.out.println(\"B is greater\"+ b);\r\n       }\r\n       if (c>max){\r\n"
+                },
+                {
+                    "date": 1772299158775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,12 @@\n public class findmaxnumber {\r\n \r\n-      static int findmax(int a ,int b,int c ) {\r\n-      int max = a;\r\n-      if(b>max){\r\n-        System.out.println(\"B is greater\"+ b);\r\n-      }\r\n-      if (c>max){\r\n-        System.out.println(\"c is greater\"+ c);\r\n-      }\r\n-      return max;\r\n+      static int squarenum(int num) {\r\n+     \r\n+      return num*num;\r\n+\r\n+\r\n     }\r\n     public static void main(String[] args) {\r\n-    System.out.println(\"Max-Number =\"+ findmax(23, 45, 98));\r\n+    System.out.println(\"number's square is\" + squarenum(4));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772299171627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \r\n \r\n     }\r\n     public static void main(String[] args) {\r\n-    System.out.println(\"number's square is\" + squarenum(4));\r\n+    System.out.println(\"number's square is \" + squarenum(4));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772299185427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n \r\n \r\n     }\r\n     public static void main(String[] args) {\r\n-    System.out.println(\"number's square is \" + squarenum(4));\r\n+    System.out.println(\"Number's square is \" + squarenum(4));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772299208692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class findmaxnumber {\r\n \r\n       static int squarenum(int num) {\r\n      \r\n-      return num*num;\r\n+      return num*num*num;\r\n \r\n \r\n     }\r\n     public static void main(String[] args) {\r\n"
+                },
+                {
+                    "date": 1772299410913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,16 @@\n public class findmaxnumber {\r\n \r\n-      static int squarenum(int num) {\r\n+      static int Posorneg(int num) {\r\n      \r\n-      return num*num*num;\r\n+    if (num>0) {\r\n+      System.out.println(\"number is positive \");\r\n+    }\r\n+    else {\r\n+      System.out.println(\"number is negative \");\r\n+    }\r\n \r\n-\r\n     }\r\n     public static void main(String[] args) {\r\n-    System.out.println(\"Number's square is \" + squarenum(4));\r\n-    }\r\n+      System.out.println(\"Your number is \" + Posorneg(4));\r\n+     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772299454058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     else {\r\n       System.out.println(\"number is negative \");\r\n     }\r\n \r\n-    }\r\n+    \r\n     public static void main(String[] args) {\r\n       System.out.println(\"Your number is \" + Posorneg(4));\r\n      }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772299486561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     else {\r\n       System.out.println(\"number is negative \");\r\n     }\r\n \r\n-    \r\n+  }\r\n     public static void main(String[] args) {\r\n       System.out.println(\"Your number is \" + Posorneg(4));\r\n      }\r\n\\ No newline at end of file\n-}\n+    }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1772298647836,
+            "name": "Commit-0",
+            "content": "public class findmaxnumber {\r\n\r\n      static int findmax(int a ,int b,int c ) {\r\n      int max = a;\r\n      if(b>max){\r\n        System.out.println(\"B is greater\"+b);\r\n      }\r\n      if (c>max){\r\n        System.out.println(\"c is greater\"+c);\r\n      }\r\n      return max;\r\n    }\r\n    public static void main(String[] args) {\r\n    System.out.println(\"Max-Number =\"+ findmax(123, 45, 98));\r\n    }\r\n}"
+        }
+    ]
+}

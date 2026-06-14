@@ -1,0 +1,42 @@
+{
+    "sourceFile": "Java/SecondLargest.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1774966187692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1774966335489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+public class Stackclass{\r\n+ static class Node{\r\n+    int data;\r\n+    Node next;\r\n+    public Node(int data){\r\n+        this.data=data;\r\n+        next=null;\r\n+    }}\r\n+    static class Stack{\r\n+        public static Node head;\r\n+        public static boolean is_empty(){\r\n+            return head==null;\r\n+            \r\n+        }\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1774966340899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-public class Stackclass{\r\n+public class StackClass{\r\n  static class Node{\r\n     int data;\r\n     Node next;\r\n     public Node(int data){\r\n@@ -9,8 +9,8 @@\n     static class Stack{\r\n         public static Node head;\r\n         public static boolean is_empty(){\r\n             return head==null;\r\n-            \r\n+\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1774966575874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-public class StackClass{\r\n+public class stackClass{\r\n  static class Node{\r\n     int data;\r\n     Node next;\r\n     public Node(int data){\r\n@@ -11,6 +11,15 @@\n         public static boolean is_empty(){\r\n             return head==null;\r\n \r\n         }\r\n+        public static void push(int data){\r\n+            Node newNode=new Node(data);\r\n+            if(is_empty()){\r\n+                head =newNode;\r\n+            return;\r\n+  }\r\n+  newNode.next=head;\r\n+  head=newNode;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1774966770141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-public class stackClass{\r\n+public class SecondLargest{\r\n  static class Node{\r\n     int data;\r\n     Node next;\r\n     public Node(int data){\r\n@@ -20,9 +20,24 @@\n   }\r\n   newNode.next=head;\r\n   head=newNode;\r\n         }\r\n+        public static int pop(){\r\n+            if (is_empty()){\r\n+                return -1;\r\n+\r\n+            }\r\n+            int top=head.data;\r\n+            head=head.next;\r\n+            return top;\r\n+\r\n+        }\r\n+        //peek operation\r\n+        public static int peek(){\r\n+            if(is_empty()){\r\n+                return -1;\r\n+                \r\n+            }\r\n+        }\r\n     }\r\n-}\n-public class Stackclass{\r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1774967024875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,10 +34,23 @@\n         //peek operation\r\n         public static int peek(){\r\n             if(is_empty()){\r\n                 return -1;\r\n-                \r\n+\r\n             }\r\n+            return head.data;\r\n+\r\n         }\r\n\\ No newline at end of file\n     }\r\n+    Stack s=new Stack();\r\n \r\n-}\n+    s.push(1);\r\n+    s.push(2);\r\n+    s.push(3);\r\n+    s.push(4);\r\n+    while(is_Empty()){\r\n+        System.out.println(s.peek());\r\n+        s.pop();\r\n+    }\r\n+\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1774969213175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,10 +41,9 @@\n \r\n         }\r\n     }\r\n     Stack s=new Stack();\r\n-\r\n-    s.push(1);\r\n+     s.push(1);\r\n     s.push(2);\r\n     s.push(3);\r\n     s.push(4);\r\n     while(is_Empty()){\r\n"
+                }
+            ],
+            "date": 1774966187692,
+            "name": "Commit-0",
+            "content": "public class Stackclass{\r\n\r\n}"
+        }
+    ]
+}

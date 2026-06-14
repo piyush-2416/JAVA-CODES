@@ -1,0 +1,94 @@
+{
+    "sourceFile": "Java/pens.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1773129699089,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1773129816719,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,7 +7,12 @@\n         \r\n     }\r\n \r\n }\r\n-public class oops{\r\n-    \r\n+public class Oops {\r\n+    public static void main(String[] args) {\r\n+        pens pen1=new pens();\r\n+        pen1.color=\"blue\";\r\n+        pen1.type=\"gel\";\r\n+      pen1.write();\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130100817,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,18 @@\n public class pens {\r\n-    String color;\r\n-    Stirng type;\r\n-   \r\n+    String color ;\r\n+   String types;\r\n     public void write() {\r\n         System.out.println(\"writing something\");\r\n         \r\n     }\r\n \r\n-}\r\n+\r\n public class Oops {\r\n     public static void main(String[] args) {\r\n         pens pen1=new pens();\r\n         pen1.color=\"blue\";\r\n-        pen1.type=\"gel\";\r\n\\ No newline at end of file\n-      pen1.write();\r\n+        pen1.types=\"gel\";\r\n+       pen1.write();\r\n+\r\n     }\r\n-}\n+}}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130158385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class pens {\r\n     String color ;\r\n    String types;\r\n     public void write() {\r\n-        System.out.println(\"writing something\");\r\n+        System.out.println(\"writing pens \");\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1773130187311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class pens {\r\n     String color ;\r\n    String types;\r\n     public void write() {\r\n-        System.out.println(\"writing pens \");\r\n+        System.out.println(\"writing shagun \");\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1773130210191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class pens {\r\n     String color ;\r\n    String types;\r\n     public void write() {\r\n-        System.out.println(\"writing shagun \");\r\n+        System.out.println(\"writing piyush \");\r\n         \r\n     }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1773130264391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n         pens pen1=new pens();\r\n         pen1.color=\"blue\";\r\n         pen1.types=\"gel\";\r\n        pen1.write();\r\n-\r\n+System.out.println(pen1);\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130279634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,7 @@\n         pens pen1=new pens();\r\n         pen1.color=\"blue\";\r\n         pen1.types=\"gel\";\r\n        pen1.write();\r\n-System.out.println(pen1);\r\n+System.out.println(pen1.color);\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130308324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,6 +13,8 @@\n         pen1.color=\"blue\";\r\n         pen1.types=\"gel\";\r\n        pen1.write();\r\n System.out.println(pen1.color);\r\n+System.out.println(pen1.types);\r\n+\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130410351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,17 @@\n         pens pen1=new pens();\r\n         pen1.color=\"blue\";\r\n         pen1.types=\"gel\";\r\n        pen1.write();\r\n+\r\n+       pens pen2=new pens();\r\n+       pen2.color=\"black\";\r\n+       pen2.types=\"ball point\";\r\n+\r\n System.out.println(pen1.color);\r\n System.out.println(pen1.types);\r\n+System.out.println(pen2.color);\r\n+System.out.println(pen2.color);\r\n \r\n+\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130428666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n \r\n        pens pen2=new pens();\r\n        pen2.color=\"black\";\r\n        pen2.types=\"ball point\";\r\n-\r\n+     pen2.write();\r\n System.out.println(pen1.color);\r\n System.out.println(pen1.types);\r\n System.out.println(pen2.color);\r\n System.out.println(pen2.color);\r\n"
+                },
+                {
+                    "date": 1773130465649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,9 @@\n \r\n        pens pen2=new pens();\r\n        pen2.color=\"black\";\r\n        pen2.types=\"ball point\";\r\n-     pen2.write();\r\n-System.out.println(pen1.color);\r\n+ System.out.println(pen1.color);\r\n System.out.println(pen1.types);\r\n System.out.println(pen2.color);\r\n System.out.println(pen2.color);\r\n \r\n"
+                },
+                {
+                    "date": 1773130484285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n        pen2.types=\"ball point\";\r\n  System.out.println(pen1.color);\r\n System.out.println(pen1.types);\r\n System.out.println(pen2.color);\r\n-System.out.println(pen2.color);\r\n+System.out.println(pen2.types);\r\n \r\n \r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773130596674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,13 @@\n    String types;\r\n     public void write() {\r\n         System.out.println(\"writing piyush \");\r\n         \r\n-    }\r\n+   \r\n+publicc voidd printcolor(){\r\n+    System.out.println(this.color);\r\n+} }\r\n \r\n-\r\n public class Oops {\r\n     public static void main(String[] args) {\r\n         pens pen1=new pens();\r\n         pen1.color=\"blue\";\r\n"
+                },
+                {
+                    "date": 1773130895278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,12 @@\n    String types;\r\n     public void write() {\r\n         System.out.println(\"writing piyush \");\r\n         \r\n-   \r\n-publicc voidd printcolor(){\r\n+    }\r\n+   public void  PrintColor(){\r\n     System.out.println(this.color);\r\n-} }\r\n+} \r\n \r\n public class Oops {\r\n     public static void main(String[] args) {\r\n         pens pen1=new pens();\r\n@@ -18,12 +18,9 @@\n \r\n        pens pen2=new pens();\r\n        pen2.color=\"black\";\r\n        pen2.types=\"ball point\";\r\n- System.out.println(pen1.color);\r\n-System.out.println(pen1.types);\r\n-System.out.println(pen2.color);\r\n-System.out.println(pen2.types);\r\n+ pen1.PrintColor();\r\n+    \r\n \r\n-\r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773131013591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \r\n        pens pen2=new pens();\r\n        pen2.color=\"black\";\r\n        pen2.types=\"ball point\";\r\n- pen1.PrintColor();\r\n+ pen2.PrintColor();\r\n     \r\n \r\n     }\r\n }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773131031552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n         System.out.println(\"writing piyush \");\r\n         \r\n     }\r\n    public void  PrintColor(){\r\n-    System.out.println(this.color);\r\n+    System.out.println(this.types);\r\n } \r\n \r\n public class Oops {\r\n     public static void main(String[] args) {\r\n"
+                },
+                {
+                    "date": 1773131374236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,23 @@\n-public class pens {\r\n-    String color ;\r\n-   String types;\r\n-    public void write() {\r\n-        System.out.println(\"writing piyush \");\r\n-        \r\n+class Student(){\r\n+    String name;\r\n+    int age;\r\n+\r\n+ public void PrintInfo(){\r\n+    System.out.println(this.name);\r\n+    System.out.println(this.age);\r\n+ }\r\n+\r\n+    Student() {\r\n+        System.out.println(\"constructor is calling in your code\");\r\n     }\r\n-   public void  PrintColor(){\r\n-    System.out.println(this.types);\r\n-} \r\n \r\n-public class Oops {\r\n-    public static void main(String[] args) {\r\n-        pens pen1=new pens();\r\n-        pen1.color=\"blue\";\r\n\\ No newline at end of file\n-        pen1.types=\"gel\";\r\n-       pen1.write();\r\n+    public class oops {\r\n+        public static void main(String[] args) {\r\n+            Student s1 = new Student();\r\n+            s1.name = \"piyush\";\r\n+            s1.age = 19;\r\n+            s1.printinfo();\r\n+        }\r\n+    } \r\n \r\n-       pens pen2=new pens();\r\n-       pen2.color=\"black\";\r\n-       pen2.types=\"ball point\";\r\n- pen2.PrintColor();\r\n-    \r\n-\r\n-    }\r\n-}}\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773131381113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-class Student(){\r\n+lass Student(){\r\n     String name;\r\n     int age;\r\n \r\n  public void PrintInfo(){\r\n"
+                },
+                {
+                    "date": 1773131560401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,24 @@\n-lass Student(){\r\n+class Student(){\r\n     String name;\r\n     int age;\r\n \r\n  public void PrintInfo(){\r\n     System.out.println(this.name);\r\n     System.out.println(this.age);\r\n  }\r\n+ tudent(){\r\n+System.out.println(\"hello cons\");  \r\n+  }\r\n+}\r\n \r\n-    Student() {\r\n-        System.out.println(\"constructor is calling in your code\");\r\n-    }\r\n-\r\n+    \r\n     public class oops {\r\n         public static void main(String[] args) {\r\n-            Student s1 = new Student();\r\n+            Student s1 = new student();\r\n             s1.name = \"piyush\";\r\n             s1.age = 19;\r\n-            s1.printinfo();\r\n+            s1.PrintInfo();\r\n         }\r\n     } \r\n \r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1773129699089,
+            "name": "Commit-0",
+            "content": "public class pens {\r\n    String color;\r\n    Stirng type;\r\n   \r\n    public void write() {\r\n        System.out.println(\"writing something\");\r\n        \r\n    }\r\n\r\n}\r\npublic class oops{\r\n    \r\n}"
+        }
+    ]
+}

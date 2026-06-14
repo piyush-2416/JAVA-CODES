@@ -1,0 +1,70 @@
+{
+    "sourceFile": "Java/Prectice.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1781412791985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1781412843387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n-        System.out.println(\"Start small. Ship something.\");\r\n-    }\r\n+// public static void main(String[] args) {\r\n+//         System.out.println(\"Start small. Ship something.\");\r\n+//     }\r\n+System.out.print(\"hellllllo\");\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781412860744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n-// public static void main(String[] args) {\r\n-//         System.out.println(\"Start small. Ship something.\");\r\n-//     }\r\n-System.out.print(\"hellllllo\");\r\n+public static void main(String[] args) {\r\n+        System.out.println(\"Start small. Ship something.\");\r\n+    }\r\n \r\n+\r\n }\r\n"
+                },
+                {
+                    "date": 1781412891949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n         System.out.println(\"Start small. Ship something.\");\r\n+        System.out.println(\"hello java programming\");\r\n     }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781412924207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n         System.out.println(\"Start small. Ship something.\");\r\n         System.out.println(\"hello java programming\");\r\n+        System.out.println(charAt(0));\r\n     }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781412980029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n+    String char=\"hello java programming\";\r\n         System.out.println(\"Start small. Ship something.\");\r\n-        System.out.println(\"hello java programming\");\r\n-        System.out.println(charAt(0));\r\n+  \r\n+        System.out.println(char.charAt(0));\r\n     }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781412988006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n     String char=\"hello java programming\";\r\n         System.out.println(\"Start small. Ship something.\");\r\n   \r\n-        System.out.println(char.charAt(0));\r\n+        System.out.println(char.charAt(1));\r\n     }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781413043071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n-    String char=\"hello java programming\";\r\n+    String str=\"hello java programming\";\r\n         System.out.println(\"Start small. Ship something.\");\r\n   \r\n-        System.out.println(char.charAt(1));\r\n+        System.out.println(str.charAt(1));\r\n     }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781413249095,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,17 @@\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n     String str=\"hello java programming\";\r\n-        System.out.println(\"Start small. Ship something.\");\r\n-  \r\n-        System.out.println(str.charAt(1));\r\n-    }\r\n+String name=\"piyush verma\";\r\n \r\n \r\n+String rev=\"\";\r\n+for(int i=0; i=str.length();i++){\r\n+    System.out.print(i);\r\n }\r\n+\r\n+\r\n+}\r\n+\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1781413261964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String name=\"piyush verma\";\r\n \r\n \r\n String rev=\"\";\r\n-for(int i=0; i=str.length();i++){\r\n+for(int i=0; i<str.length();i++){\r\n     System.out.print(i);\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1781413281204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n \r\n String rev=\"\";\r\n for(int i=0; i<str.length();i++){\r\n-    System.out.print(i);\r\n+    System.out.print(i.value);\r\n }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781413337935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n \r\n String rev=\"\";\r\n for(int i=0; i<str.length();i++){\r\n-    System.out.print(i.value);\r\n+    System.out.print(str(i));\r\n }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781413390604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \r\n String rev=\"\";\r\n for(int i=0; i<str.length();i++){\r\n     System.out.print(str(i));\r\n+    rev +=\"\";\r\n }\r\n \r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781413405559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n \r\n String rev=\"\";\r\n for(int i=0; i<str.length();i++){\r\n-    System.out.print(str(i));\r\n+    System.out.println(str(i));\r\n     rev +=\"\";\r\n }\r\n \r\n \r\n"
+                }
+            ],
+            "date": 1781412791985,
+            "name": "Commit-0",
+            "content": "public class Prectice {\r\n    // Online Java Compiler\r\n// Use this editor to write, compile and run your Java code online\r\npublic static void main(String[] args) {\r\n        System.out.println(\"Start small. Ship something.\");\r\n    }\r\n\r\n}\r\n"
+        }
+    ]
+}

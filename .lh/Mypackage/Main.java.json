@@ -1,0 +1,98 @@
+{
+    "sourceFile": "Mypackage/Main.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 20,
+            "patches": [
+                {
+                    "date": 1771738627267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1771738807965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+// 1. Package (optional)\r\n+package Mypackage;\r\n+\r\n+// 2. Import (optional)\r\n+import java.util.Scanner;\r\n+\r\n+// 3. Class Declaration (file name = class name)\r\n+public class Main {\r\n+\r\n+    // 4. Main Method (entry point of program)\r\n+    public static void main(String[] args) {\r\n+\r\n+         Scanner Sc=new Scanner(System.in);\r\n+         \r\n+    String name=Sc.nextLine();\r\n+    System.out.print(name);\r\n+\r\n+\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771738886915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,11 +9,11 @@\n \r\n     // 4. Main Method (entry point of program)\r\n     public static void main(String[] args) {\r\n \r\n-         Scanner Sc=new Scanner(System.in);\r\n+         Scanner sc=new Scanner(System.in);\r\n          \r\n-    String name=Sc.nextLine();\r\n+    String name=sc.nextLine();\r\n     System.out.print(name);\r\n \r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1771739194438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,12 +9,12 @@\n \r\n     // 4. Main Method (entry point of program)\r\n     public static void main(String[] args) {\r\n \r\n-         Scanner sc=new Scanner(System.in);\r\n+        Scanner Sc=new Scanner(System.in);\r\n          \r\n-    String name=sc.nextLine();\r\n+    String name=Sc.nextLine();\r\n     System.out.print(name);\r\n \r\n-\r\n+    \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771739378750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import java.util.Scanner;\r\n+\r\n+public class Main {\r\n+    public static void main(String[] args) {\r\n+        Scanner sc = new Scanner(System.in);\r\n+\r\n+        System.out.print(\"Enter first number: \");\r\n+        int a = sc.nextInt();\r\n+\r\n+        System.out.print(\"Enter second number: \");\r\n+        int b = sc.nextInt();\r\n+\r\n+        // 🔥 Processing\r\n+        int sum = a + b;\r\n+\r\n+        System.out.println(\"Sum is: \" + sum);\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771739531075,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         System.out.print(\"Enter second number: \");\r\n         int b = sc.nextInt();\r\n \r\n         // 🔥 Processing\r\n-        int sum = a + b;\r\n+        int sum = a * b;\r\n \r\n         System.out.println(\"Sum is: \" + sum);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771739652104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,12 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-        Scanner sc = new Scanner(System.in);\r\n+       Scanner sc=new Scanner(System.in);\r\n+ String name=sc.nextLine();\r\n+ \r\n \r\n-        System.out.print(\"Enter first number: \");\r\n-        int a = sc.nextInt();\r\n-\r\n-        System.out.print(\"Enter second number: \");\r\n-        int b = sc.nextInt();\r\n-\r\n-        // 🔥 Processing\r\n-        int sum = a * b;\r\n-\r\n-        System.out.println(\"Sum is: \" + sum);\r\n+ System.out.println(name);\r\n+        \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771739769717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,49 +1,13 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-       Scanner sc=new Scanner(System.in);\r\n- String name=sc.nextLine();\r\n- \r\n-\r\n- System.out.println(name);\r\n-        \r\n-    }\r\n-}\n-// 1. Package (optional)\r\n-package Mypackage;\r\n-\r\n-// 2. Import (optional)\r\n-import java.util.Scanner;\r\n-\r\n-// 3. Class Declaration (file name = class name)\r\n-public class Main {\r\n-\r\n-    // 4. Main Method (entry point of program)\r\n-    public static void main(String[] args) {\r\n-\r\n-        Scanner Sc=new Scanner(System.in);\r\n-         \r\n-    String name=Sc.nextLine();\r\n-    System.out.print(name);\r\n-\r\n+    Scanner sc=new Scanner(System.in);\r\n     \r\n-    }\r\n-}\n-// 1. Package (optional)\r\n-package Mypackage;\r\n+    String name=sc.nextLine();\r\n \r\n-// 2. Import (optional)\r\n-import java.util.Scanner;\r\n \r\n-// 3. Class Declaration (file name = class name)\r\n-public class Main {\r\n-\r\n-    // 4. Main Method (entry point of program)\r\n-    public static void main(String[] args) {\r\n-\r\n-        // 5. Statements\r\n-        System.out.println(\"piyush verma \");\r\n-\r\n+    System.out.println(name);\r\n+        \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771739895857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,13 @@\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n     Scanner sc=new Scanner(System.in);\r\n-    \r\n+\r\n     String name=sc.nextLine();\r\n \r\n \r\n     System.out.println(name);\r\n         \r\n     }\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771740060379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,18 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-    Scanner sc=new Scanner(System.in);\r\n+        Scanner sc = new Scanner(System.in);\r\n \r\n-    String name=sc.nextLine();\r\n+        System.out.print(\"Enter first number: \");\r\n+        int a = sc.nextInt();\r\n \r\n+        System.out.print(\"Enter second number: \");\r\n+        int b = sc.nextInt();\r\n \r\n-    System.out.println(name);\r\n-        \r\n+        // 🔥 Processing\r\n+        int sum = a + b;\r\n+\r\n+        System.out.println(\"Sum is: \" + sum);\r\n     }\r\n-    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771740114426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,14 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-        Scanner sc = new Scanner(System.in);\r\n+    Scanner sc=new Scanner(System.in);\r\n \r\n-        System.out.print(\"Enter first number: \");\r\n-        int a = sc.nextInt();\r\n+    String name=sc.nextLine();\r\n \r\n-        System.out.print(\"Enter second number: \");\r\n-        int b = sc.nextInt();\r\n \r\n-        // 🔥 Processing\r\n-        int sum = a + b;\r\n-\r\n-        System.out.println(\"Sum is: \" + sum);\r\n+    System.out.println(name);\r\n+        \r\n     }\r\n+    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771740282030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,18 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-    Scanner sc=new Scanner(System.in);\r\n+        Scanner sc = new Scanner(System.in);\r\n \r\n-    String name=sc.nextLine();\r\n+        System.out.print(\"Enter first number: \");\r\n+        int a = sc.nextInt();\r\n \r\n+        System.out.print(\"Enter second number: \");\r\n+        int b = sc.nextInt();\r\n \r\n-    System.out.println(name);\r\n-        \r\n+        // 🔥 Processing\r\n+        int sum = a + b;\r\n+\r\n+        System.out.println(\"Sum is: \" + sum);\r\n     }\r\n-    \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771740614558,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n public class Main {\r\n     public static void main(String[] args) {\r\n         Scanner sc = new Scanner(System.in);\r\n \r\n-        System.out.print(\"Enter first number: \");\r\n+        System.out.print(\"hello first number: \");\r\n         int a = sc.nextInt();\r\n \r\n         System.out.print(\"Enter second number: \");\r\n         int b = sc.nextInt();\r\n"
+                },
+                {
+                    "date": 1771740676473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         System.out.print(\"Enter second number: \");\r\n         int b = sc.nextInt();\r\n \r\n         // 🔥 Processing\r\n-        int sum = a + b;\r\n+        int sum = a * b;\r\n \r\n         System.out.println(\"Sum is: \" + sum);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771740740185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-        Scanner sc = new Scanner(System.in);\r\n+        Scanner ver = new Scanner(System.in);\r\n \r\n         System.out.print(\"hello first number: \");\r\n-        int a = sc.nextInt();\r\n+        int a = var.nextInt();\r\n \r\n         System.out.print(\"Enter second number: \");\r\n-        int b = sc.nextInt();\r\n+        int b = var.nextInt();\r\n \r\n         // 🔥 Processing\r\n         int sum = a * b;\r\n \r\n"
+                },
+                {
+                    "date": 1771740777998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-        Scanner ver = new Scanner(System.in);\r\n+        Scanner sc = new Scanner(System.in);\r\n \r\n         System.out.print(\"hello first number: \");\r\n-        int a = var.nextInt();\r\n+        int a = sc.nextInt();\r\n \r\n         System.out.print(\"Enter second number: \");\r\n-        int b = var.nextInt();\r\n+        int b = sc.nextInt();\r\n \r\n         // 🔥 Processing\r\n         int sum = a * b;\r\n \r\n"
+                },
+                {
+                    "date": 1771740974836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,18 +1,9 @@\n-import java.util.Scanner;\r\n-\r\n public class Main {\r\n     public static void main(String[] args) {\r\n-        Scanner sc = new Scanner(System.in);\r\n \r\n-        System.out.print(\"hello first number: \");\r\n-        int a = sc.nextInt();\r\n+        for(int i = 1; i <= 10; i++) {\r\n+            System.out.println(i);\r\n+        }\r\n \r\n-        System.out.print(\"Enter second number: \");\r\n-        int b = sc.nextInt();\r\n-\r\n-        // 🔥 Processing\r\n-        int sum = a * b;\r\n-\r\n-        System.out.println(\"Sum is: \" + sum);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771741123292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n public class Main {\r\n     public static void main(String[] args) {\r\n \r\n-        for(int i = 1; i <= 10; i++) {\r\n-            System.out.println(i);\r\n+       for(int i=0;i<=7;i++){\r\n+       System.out.println( i);\r\n         }\r\n \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771741260291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,15 @@\n+import java.util.Scanner;\r\n+\r\n public class Main {\r\n     public static void main(String[] args) {\r\n+     Scanner sc=new Scanner(System.in);\r\n+     int x=sc.nextInt();\r\n+     if (x%2==0){\r\n+        System.out.println(\"even\");\r\n \r\n-       for(int i=0;i<=7;i++){\r\n-       System.out.println( i);\r\n-        }\r\n-\r\n+     }\r\n+     else{\r\n+        System.out.println(\"odd number\");\r\n+     }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1771741461434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,6 @@\n+package Mypackage;\r\n+\r\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n"
+                },
+                {
+                    "date": 1771741650730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,15 +3,17 @@\n import java.util.Scanner;\r\n \r\n public class Main {\r\n     public static void main(String[] args) {\r\n-     Scanner sc=new Scanner(System.in);\r\n-     int x=sc.nextInt();\r\n-     if (x%2==0){\r\n-        System.out.println(\"even\");\r\n+        Scanner sc = new Scanner(System.in);\r\n \r\n-     }\r\n-     else{\r\n-        System.out.println(\"odd number\");\r\n-     }\r\n+        System.out.print(\"Enter first number: \");\r\n+        int a = sc.nextInt();\r\n+\r\n+        System.out.print(\"Enter second number: \");\r\n+        int b = sc.nextInt();\r\n+\r\n+        int sum = a + b;\r\n+\r\n+        System.out.println(\"Sum is: \" + sum);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1771738627267,
+            "name": "Commit-0",
+            "content": "// 1. Package (optional)\r\npackage Mypackage;\r\n\r\n// 2. Import (optional)\r\nimport java.util.Scanner;\r\n\r\n// 3. Class Declaration (file name = class name)\r\npublic class Main {\r\n\r\n    // 4. Main Method (entry point of program)\r\n    public static void main(String[] args) {\r\n\r\n        // 5. Statements\r\n        System.out.println(\"piyush verma \");\r\n\r\n    }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "sourceFile": "Java/SumFunction.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1772297231731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1772297300934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n     }\r\n \r\n     public static void main(String[] args) {\r\n-        int result = Multi(10, 20);\r\n+        int result = multiplycation(10, 20);\r\n         System.out.println(\"Sum is: \" + result);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772297536623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,11 @@\n public class SumFunction {\r\n \r\n-    public static int sum(int a, int b) {\r\n+    public static int multiply(int a, int b) {\r\n         return  a*b;\r\n \r\n     }\r\n-\r\n     public static void main(String[] args) {\r\n-        int result = multiplycation(10, 20);\r\n+        int result = multiply(3, 4);\r\n         System.out.println(\"Sum is: \" + result);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772297852538,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,15 @@\n public class SumFunction {\r\n \r\n-    public static int multiply(int a, int b) {\r\n-        return  a*b;\r\n-\r\n+    public static void evenodd(int n) {\r\n+      \r\n+ if(n%2==0){\r\n+        System.out.println(\"number is even \");\r\n+      }\r\n+      else{\r\n+        System.out.println(\"\");\r\n+      }\r\n     }\r\n     public static void main(String[] args) {\r\n-        int result = multiply(3, 4);\r\n-        System.out.println(\"Sum is: \" + result);\r\n+       evenodd(4);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772297867315,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n  if(n%2==0){\r\n         System.out.println(\"number is even \");\r\n       }\r\n       else{\r\n-        System.out.println(\"\");\r\n+        System.out.println(\"number is odd\");\r\n       }\r\n     }\r\n     public static void main(String[] args) {\r\n        evenodd(4);\r\n"
+                },
+                {
+                    "date": 1772297876383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n         System.out.println(\"number is odd\");\r\n       }\r\n     }\r\n     public static void main(String[] args) {\r\n-       evenodd(4);\r\n+       evenodd(5);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772297885158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n         System.out.println(\"number is odd\");\r\n       }\r\n     }\r\n     public static void main(String[] args) {\r\n-       evenodd(5);\r\n+       evenodd(5099);\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298061941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,12 @@\n public class SumFunction {\r\n \r\n-    public static void evenodd(int n) {\r\n-      \r\n- if(n%2==0){\r\n-        System.out.println(\"number is even \");\r\n-      }\r\n-      else{\r\n-        System.out.println(\"number is odd\");\r\n-      }\r\n+    public static int factorialnum(int n) {\r\n+      int fact=1;\r\n+   for (int i=1;i<=n;i++){\r\n+    fact *=1;\r\n+   }\r\n     }\r\n     public static void main(String[] args) {\r\n-       evenodd(5099);\r\n+   \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298134352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n     public static int factorialnum(int n) {\r\n       int fact=1;\r\n    for (int i=1;i<=n;i++){\r\n     fact *=1;\r\n-   }\r\n+   }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n-   \r\n+   System.out.println(\"Factorial =\"+ factorialnum(8));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298151977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n public class SumFunction {\r\n \r\n-    public static int factorialnum(int n) {\r\n+      static int factorialnum(int n) {\r\n       int fact=1;\r\n    for (int i=1;i<=n;i++){\r\n     fact *=1;\r\n    }return fact;\r\n"
+                },
+                {
+                    "date": 1772298183185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n       static int factorialnum(int n) {\r\n       int fact=1;\r\n    for (int i=1;i<=n;i++){\r\n-    fact *=1;\r\n+    fact *=i;\r\n    }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n    System.out.println(\"Factorial =\"+ factorialnum(8));\r\n"
+                },
+                {
+                    "date": 1772298194672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     fact *=i;\r\n    }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n-   System.out.println(\"Factorial =\"+ factorialnum(8));\r\n+   System.out.println(\"Factorial =\"+ factorialnum(2));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298209571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     fact *=i;\r\n    }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n-   System.out.println(\"Factorial =\"+ factorialnum(2));\r\n+   System.out.println(\"Factorial =\"+ factorialnum(6));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298217007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     fact *=i;\r\n    }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n-   System.out.println(\"Factorial =\"+ factorialnum(6));\r\n+   System.out.println(\"Factorial =\"+ factorialnum(2));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298224903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,7 @@\n     fact *=i;\r\n    }return fact;\r\n     }\r\n     public static void main(String[] args) {\r\n-   System.out.println(\"Factorial =\"+ factorialnum(2));\r\n+   System.out.println(\"Factorial =\"+ factorialnum(3));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298461332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n public class SumFunction {\r\n \r\n-      static int factorialnum(int n) {\r\n-      int fact=1;\r\n-   for (int i=1;i<=n;i++){\r\n-    fact *=i;\r\n-   }return fact;\r\n+      static int findmax(int a ,int b,int c ) {\r\n+      int max = a;\r\n+      if (b>max)max=b;\r\n+      if (c>max)max=c;\r\n+      return max;\r\n     }\r\n     public static void main(String[] args) {\r\n-   System.out.println(\"Factorial =\"+ factorialnum(3));\r\n+    System.out.println(\"Max-Number =\"+ findmax(23, 45, 98));\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772298477431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-public class SumFunction {\r\n+public class findmaxnumber {\r\n \r\n       static int findmax(int a ,int b,int c ) {\r\n       int max = a;\r\n       if (b>max)max=b;\r\n"
+                }
+            ],
+            "date": 1772297231731,
+            "name": "Commit-0",
+            "content": "public class SumFunction {\r\n\r\n    public static int sum(int a, int b) {\r\n        return  a*b;\r\n\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        int result = Multi(10, 20);\r\n        System.out.println(\"Sum is: \" + result);\r\n    }\r\n}"
+        }
+    ]
+}

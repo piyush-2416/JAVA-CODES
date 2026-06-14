@@ -1,0 +1,150 @@
+{
+    "sourceFile": "Java/Main.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 33,
+            "patches": [
+                {
+                    "date": 1772449706668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1772449730025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n        int[]marks =new int [3];\r\n        marks[0] = 97;\r\n        marks[1] = 45;\r\n        marks[2] = 65;\r\n-       System.out.println(marks[1 ][ 2]);\r\n+       System.out.println(marks[1 ],[ 2]);\r\n \r\n         \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772449741127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n        int[]marks =new int [3];\r\n        marks[0] = 97;\r\n        marks[1] = 45;\r\n        marks[2] = 65;\r\n-       System.out.println(marks[1 ],[ 2]);\r\n+       System.out.println(marks[1 ] );\r\n \r\n         \r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772449882490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n public class Main {\r\n     public static void main(String[] args) {\r\n-       int[]marks =new int [3];\r\n-       marks[0] = 97;\r\n-       marks[1] = 45;\r\n-       marks[2] = 65;\r\n-       System.out.println(marks[1 ] );\r\n-\r\n-        \r\n-    }\r\n-}\n\\ No newline at end of file\n+    int [] marks =new int [3];\r\n+    marks[0]=98;\r\n+    marks[1]=43;\r\n+    marks[2]=78;\r\n+    for(int i=0;i<3;i++){\r\n+        System.out.println(marks[i]);\r\n+    }  }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772609801838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,10 @@\n-public class Main {\r\n+class Main {\r\n     public static void main(String[] args) {\r\n-    int [] marks =new int [3];\r\n-    marks[0]=98;\r\n-    marks[1]=43;\r\n-    marks[2]=78;\r\n-    for(int i=0;i<3;i++){\r\n-        System.out.println(marks[i]);\r\n\\ No newline at end of file\n-    }  }}\n+    StringBuilder sb=new StringBuilder(\"My Name is\");\r\n+    sb.append(\"piyush\");\r\n+    sb.append(\"And i am learing java \");\r\n+    System.out.println(sb);\r\n+\r\n+    }  \r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772609829630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is\");\r\n     sb.append(\"piyush\");\r\n-    sb.append(\"And i am learing java \");\r\n+    sb.append(\"And i am learing python  \");\r\n     System.out.println(sb);\r\n \r\n     }  \r\n \r\n"
+                },
+                {
+                    "date": 1772609885409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is\");\r\n     sb.append(\"piyush\");\r\n+    sb.insert(\"verma\");\r\n     sb.append(\"And i am learing python  \");\r\n     System.out.println(sb);\r\n \r\n+\r\n     }  \r\n \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772609985077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is\");\r\n     sb.append(\"piyush\");\r\n-    sb.insert(\"verma\");\r\n+    sb.insert(5,\"verma\");\r\n+    sb.delete(0, 5);\r\n+    sb.reverse( );\r\n+    String s=sb.toString();\r\n     sb.append(\"And i am learing python  \");\r\n     System.out.println(sb);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1772610003194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n     StringBuilder sb=new StringBuilder(\"My Name is\");\r\n     sb.append(\"piyush\");\r\n     sb.insert(5,\"verma\");\r\n     sb.delete(0, 5);\r\n-    sb.reverse( );\r\n+    // sb.reverse( );\r\n     String s=sb.toString();\r\n     sb.append(\"And i am learing python  \");\r\n     System.out.println(sb);\r\n \r\n"
+                },
+                {
+                    "date": 1772610014641,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     sb.append(\"piyush\");\r\n     sb.insert(5,\"verma\");\r\n     sb.delete(0, 5);\r\n     // sb.reverse( );\r\n-    String s=sb.toString();\r\n+    // String s=sb.toString();\r\n     sb.append(\"And i am learing python  \");\r\n     System.out.println(sb);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1772610102525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+class Main {\r\n+    public static void main(String[] args) {\r\n+    StringBuilder sb=new StringBuilder(\"My Name is\");\r\n+    sb.append(\"piyush\");\r\n+         System.out.println(sb);\r\n+\r\n+\r\n+    }  \r\n+\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772610117914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class Main {\r\n     public static void main(String[] args) {\r\n-    StringBuilder sb=new StringBuilder(\"My Name is\");\r\n-    sb.append(\"piyush\");\r\n+    StringBuilder sb=new StringBuilder(\"My Name is \");\r\n+    sb.append(\"piyush \");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610166249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n+    sb.insert(3,\"verma\")\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610171556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(3,\"verma\")\r\n+    sb.insert(3,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610192245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(3,\"verma\");\r\n+    sb.insert(6,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610202655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(6,\"verma\");\r\n+    sb.insert(8,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610217427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(8,\"verma\");\r\n+    sb.insert(7,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610231852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(7,\"verma\");\r\n+    sb.insert(10,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610241674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,11 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(10,\"verma\");\r\n+    sb.insert(17,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n \r\n-}\n-class Main {\r\n-    public static void main(String[] args) {\r\n-    StringBuilder sb=new StringBuilder(\"My Name is\");\r\n-    sb.append(\"piyush\");\r\n-    sb.insert(5,\"verma\");\r\n-    sb.delete(0, 5);\r\n-    // sb.reverse( );\r\n-    // String s=sb.toString();\r\n-    sb.append(\"And i am learing python  \");\r\n-    System.out.println(sb);\r\n-\r\n-\r\n-    }  \r\n-\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772610256673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\"piyush \");\r\n-    sb.insert(17,\"verma\");\r\n+    sb.insert(18,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610276408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n-    sb.append(\"piyush \");\r\n+    sb.append(\" piyush \");\r\n     sb.insert(18,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1772610285800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n class Main {\r\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n-    sb.insert(18,\"verma\");\r\n+    sb.insert(19,\"verma\");\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610319344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n+    sb.delete(0, 5);\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610332910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n-    sb.delete(0, 5);\r\n+    sb.delete(0, 1);\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610355007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     public static void main(String[] args) {\r\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n-    sb.delete(0, 1);\r\n+    sb.delete(0, 6);\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610445335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n     sb.delete(0, 6);\r\n+    sb.reverse();\r\n          System.out.println(sb);\r\n \r\n \r\n     }  \r\n"
+                },
+                {
+                    "date": 1772610485468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,6 @@\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n     sb.delete(0, 6);\r\n     sb.reverse();\r\n-         System.out.println(sb);\r\n-\r\n-\r\n-    }  \r\n-\r\n-}\n\\ No newline at end of file\n+    System.out.println(sb);\r\n+  } }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772610741430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n     StringBuilder sb=new StringBuilder(\"My Name is \");\r\n     sb.append(\" piyush \");\r\n     sb.insert(19,\"verma\");\r\n     sb.delete(0, 6);\r\n-    sb.reverse();\r\n+    sb.reverse(); \r\n     System.out.println(sb);\r\n\\ No newline at end of file\n-  } }\n+  }}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1772695162317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,14 @@\n-class Main {\r\n-    public static void main(String[] args) {\r\n-    StringBuilder sb=new StringBuilder(\"My Name is \");\r\n-    sb.append(\" piyush \");\r\n-    sb.insert(19,\"verma\");\r\n-    sb.delete(0, 6);\r\n-    sb.reverse(); \r\n-    System.out.println(sb);\r\n-  }}\n\\ No newline at end of file\n+class ReversePrint{\r\n+\r\n+    static void printReverse(int n){\r\n+\r\n+      if(n==0){\r\n+       return;\r\n+      }\r\n+System.out.println(n-1);\r\n+    }\r\n+\r\n+    public static void main(String[] args){\r\n+\r\n+  printReverse(12345);   }\r\n+}\r\n"
+                },
+                {
+                    "date": 1772695291127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,12 @@\n \r\n       if(n==0){\r\n        return;\r\n       }\r\n-System.out.println(n-1);\r\n+ System.out.println();\r\n+ printReverse(n-1);\r\n     }\r\n \r\n     public static void main(String[] args){\r\n \r\n-  printReverse(12345);   }\r\n+  printReverse(5);   }\r\n }\r\n"
+                },
+                {
+                    "date": 1772695337126,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class ReversePrint{\r\n \r\n-    static void printReverse(int n){\r\n+    static void printReverse(int n){          \r\n \r\n       if(n==0){\r\n        return;\r\n       }\r\n"
+                },
+                {
+                    "date": 1772695346336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n class ReversePrint{\r\n \r\n-    static void printReverse(int n){          \r\n+    static void printReverse(int n){           \r\n \r\n       if(n==0){\r\n        return;\r\n       }\r\n"
+                },
+                {
+                    "date": 1773640963213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n     public static void main(String[] args) {\r\n \r\n         DoublyLinkedList list = new DoublyLinkedList();\r\n \r\n-        list.insertFirst(10);\r\n+        list.insertFirst(90);\r\n         list.insertFirst(20);\r\n         list.insertLast(30);\r\n         list.insertLast(40);\r\n \r\n"
+                },
+                {
+                    "date": 1773642891678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+class Node {\r\n+    int data;\r\n+    Node next;\r\n+\r\n+    Node(int data) {\r\n+        this.data = data;\r\n+        this.next = null;\r\n+    }\r\n+}\r\n+\r\n+public class SinglyLinkedList {\r\n+\r\n+    Node head;\r\n+\r\n+    public void insert(int data) {\r\n+        Node newNode = new Node(data);\r\n+\r\n+        if (head == null) {\r\n+            head = newNode;\r\n+            return;\r\n+        }\r\n+\r\n+        Node temp = head;\r\n+\r\n+        while (temp.next != null) {\r\n+            temp = temp.next;\r\n+        }\r\n+\r\n+        temp.next = newNode;\r\n+    }\r\n+\r\n+    public void display() {\r\n+        Node temp = head;\r\n+\r\n+        while (temp != null) {\r\n+            System.out.print(temp.data + \" -> \");\r\n+            temp = temp.next;\r\n+        }\r\n+\r\n+        System.out.println(\"NULL\");\r\n+    }\r\n+\r\n+    public static void main(String[] args) {\r\n+\r\n+        SinglyLinkedList list = new SinglyLinkedList();\r\n+\r\n+        list.insert(10);\r\n+        list.insert(20);\r\n+        list.insert(30);\r\n+\r\n+        list.display();\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1772449706668,
+            "name": "Commit-0",
+            "content": "public class Main {\r\n    public static void main(String[] args) {\r\n       int[]marks =new int [3];\r\n       marks[0] = 97;\r\n       marks[1] = 45;\r\n       marks[2] = 65;\r\n       System.out.println(marks[1 ][ 2]);\r\n\r\n        \r\n    }\r\n}"
+        }
+    ]
+}

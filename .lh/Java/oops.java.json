@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Java/oops.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1773129531832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1773132075857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,24 @@\n+\r\n class Student(){\r\n-    String name;\r\n-    int age;\r\n+    String Name;\r\n+    int Age;\r\n \r\n- public void PrintInfo(){\r\n-    System.out.println(this.name);\r\n-    System.out.println(this.age);\r\n- }\r\n- tudent(){\r\n-System.out.println(\"hello cons\");  \r\n-  }\r\n+    public void PrintInfo(String Name){\r\n+        System.out.println(Name);\r\n+\r\n+    }\r\n+    public void PrintInfo(int Age){\r\n+        System.out.println(Age);\r\n+    }\r\n+    public void PrintInfo(String Name,int Age){\r\n+        System.out.println(Name + \" \" + Age);\r\n+    }\r\n }\r\n-\r\n-    \r\n-    public class oops {\r\n-        public static void main(String[] args) {\r\n-            Student s1 = new student();\r\n-            s1.name = \"piyush\";\r\n-            s1.age = 19;\r\n-            s1.PrintInfo();\r\n-        }\r\n-    } \r\n-\r\n+public class Oops{\r\n+public static void main(String[] args) {\r\n+    Student s1=new Student();\r\n+    s1.Name=\"Piyush\";\r\n+    s1.Age=19;\r\n+    s1.PrintInfo( s1.Age);\r\n+}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1773141021543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n \r\n         Student s1=new Student ();\r\n         s1.name=\"piyush verma\";\r\n         s1.age=19;\r\n-        s1.Printinfo(s1.name,s1.age);\r\n+        s1.Printinfo(s1.name+\"\"+s1.age);\r\n     }\r\n  }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1773129531832,
+            "name": "Commit-0",
+            "content": "public class pens {\r\n    \r\n}\r\n"
+        }
+    ]
+}
