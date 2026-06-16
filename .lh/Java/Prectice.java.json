@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 48,
             "patches": [
                 {
                     "date": 1781412791985,
@@ -60,6 +60,146 @@
                 {
                     "date": 1781413405559,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n \r\n String rev=\"\";\r\n for(int i=0; i<str.length();i++){\r\n-    System.out.print(str(i));\r\n+    System.out.println(str(i));\r\n     rev +=\"\";\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1781543333964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,13 @@\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n-    String str=\"hello java programming\";\r\n-String name=\"piyush verma\";\r\n \r\n \r\n-String rev=\"\";\r\n-for(int i=0; i<str.length();i++){\r\n-    System.out.println(str(i));\r\n-    rev +=\"\";\r\n+StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n+sb.delete(5,10);\r\n+System.out.println(sb);\r\n }\r\n \r\n-\r\n+ \r\n }\r\n-\r\n-\r\n-}\r\n"
+                },
+                {
+                    "date": 1781543413788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+public static void main(String[] args) {\r\n+\r\n+\r\n+StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n+sb.delete(5,10);\r\n+System.out.println(sb);\r\n+}\r\n+\r\n+ \r\n+}\r\n"
+                },
+                {
+                    "date": 1781543425045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.delete(5,10);\r\n+sb.delete(5);\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543442920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.delete(5);\r\n+sb.delete(5,sb.length());\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543481352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.delete(5,sb.length());\r\n+sb.deletecharat\r\n+(1);\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543509717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.deletecharat\r\n-(1);\r\n+sb.deleteCharAt(1);\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543599407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.deleteCharAt(1);\r\n+sb.replace(2,6,\"yes\");\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543613656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.replace(2,6,\"yes\");\r\n+sb.replace(2,6,\"hes\");\r\n System.out.println(sb);\r\n }\r\n \r\n  \r\n"
+                },
+                {
+                    "date": 1781543628436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+public static void main(String[] args) {\r\n+\r\n+\r\n+StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n+sb.replace(2,6,\"hesha\");\r\n+System.out.println(sb);\r\n+}\r\n+\r\n+ \r\n+}\r\n"
+                },
+                {
+                    "date": 1781543711483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,8 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.replace(2,6,\"hesha\");\r\n+sb.charAt(0,\"m\");\r\n System.out.println(sb);\r\n-}\r\n-\r\n  \r\n }\r\n"
+                },
+                {
+                    "date": 1781543723725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,5 @@\n sb.charAt(0,\"m\");\r\n System.out.println(sb);\r\n  \r\n }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781543744053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.charAt(0,\"m\");\r\n+sb.setCharAt(0,\"m\");\r\n System.out.println(sb);\r\n  \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781543936265,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,11 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n \r\n-StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.setCharAt(0,\"m\");\r\n-System.out.println(sb);\r\n+String str=\"hello piyush\";\r\n+StringBuilder sb=new StringBuilder(str);\r\n+str.setCharAt(0,\"M\");\r\n+System.out.println(str);\r\n  \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781543950378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,37 +3,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n \r\n-String str=\"hello piyush\";\r\n-StringBuilder sb=new StringBuilder(str);\r\n-str.setCharAt(0,\"M\");\r\n-System.out.println(str);\r\n- \r\n-}\r\n-}\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n-\r\n-\r\n-StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.replace(2,6,\"hes\");\r\n+StringBuilder sb = new StringBuilder(\"Hello\");\r\n+sb.setCharAt(0, 'M');\r\n System.out.println(sb);\r\n }\r\n-\r\n- \r\n-}\r\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n-\r\n-\r\n-StringBuilder sb=new StringBuilder(\"piyush verma\");\r\n-sb.delete(5,10);\r\n-System.out.println(sb);\r\n-}\r\n-\r\n- \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781543996759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.setCharAt(0, 'M');\r\n-System.out.println(sb);\r\n+sb.setCharAt(2, \"mello\");\r\n+System.out.println(\r\n+sb\r\n+);\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544007857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+public static void main(String[] args) {\r\n+\r\n+\r\n+StringBuilder sb = new StringBuilder(\"Hello\");\r\n+sb.setCharAt(2, \"m\");\r\n+System.out.println(\r\n+sb\r\n+);\r\n+}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544016390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.setCharAt(2, \"m\");\r\n+sb.setCharAt(2, \"M\");\r\n System.out.println(\r\n sb\r\n );\r\n }\r\n"
+                },
+                {
+                    "date": 1781544028423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,23 +4,10 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.setCharAt(2, \"M\");\r\n+sb.setCharAt(0, \"M\");\r\n System.out.println(\r\n sb\r\n );\r\n }\r\n-}\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n-\r\n-\r\n-StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.setCharAt(2, \"mello\");\r\n-System.out.println(\r\n-sb\r\n-);\r\n-}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544056830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,7 @@\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n sb.setCharAt(0, \"M\");\r\n-System.out.println(\r\n-sb\r\n-);\r\n+System.out.println(sb);\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544165243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,7 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.setCharAt(0, \"M\");\r\n-System.out.println(sb);\r\n+sb.deleteCharAt(4);\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544193219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,7 @@\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n sb.deleteCharAt(4);\r\n+System.out.println(sb);\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544808404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,7 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.deleteCharAt(4);\r\n-System.out.println(sb);\r\n+sb.append(\"java\");\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544833962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.append(\"java\");\r\n+sb.reverse(\"java\");\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544848517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n public static void main(String[] args) {\r\n \r\n \r\n StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.reverse(\"java\");\r\n+sb.reverse();\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781544892121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+public static void main(String[] args) {\r\n+\r\n+\r\n+StringBuilder sb = new StringBuilder(\"Hello\");\r\n+sb.reverse();\r\n+System.out.println(sb);\r\n+}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781593906086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,20 +2,13 @@\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n-\r\n-StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.reverse();\r\n-System.out.println(sb);\r\n+String str=\"hello java\";\r\n+int start=0;\r\n+int end=str.length()-1;\r\n+for(int i=end;i<=start;i++){\r\n+    System.out.println(str(i));\r\n }\r\n-}\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n \r\n-\r\n-StringBuilder sb = new StringBuilder(\"Hello\");\r\n-sb.reverse();\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781593928490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String str=\"hello java\";\r\n int start=0;\r\n int end=str.length()-1;\r\n for(int i=end;i<=start;i++){\r\n-    System.out.println(str(i));\r\n+    System.out.println(str);\r\n }\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781593953711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String str=\"hello java\";\r\n int start=0;\r\n int end=str.length()-1;\r\n for(int i=end;i<=start;i++){\r\n-    System.out.println(str);\r\n+    System.out.println(str(i));\r\n }\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781593964266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String str=\"hello java\";\r\n int start=0;\r\n int end=str.length()-1;\r\n for(int i=end;i<=start;i++){\r\n-    System.out.println(str(i));\r\n+    System.out.println(str());\r\n }\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781593985605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String str=\"hello java\";\r\n int start=0;\r\n int end=str.length()-1;\r\n for(int i=end;i<=start;i++){\r\n-    System.out.println(str());\r\n+    System.out.println(str);\r\n }\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781594110680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,11 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n String str=\"hello java\";\r\n-int start=0;\r\n-int end=str.length()-1;\r\n-for(int i=end;i<=start;i++){\r\n-    System.out.println(str);\r\n+\r\n+for(int i<str.length()-1;i=0;i--){\r\n+  System.out.println(str.charAt(i));\r\n }\r\n \r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781594120941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n public static void main(String[] args) {\r\n \r\n String str=\"hello java\";\r\n \r\n-for(int i<str.length()-1;i=0;i--){\r\n+for(int i<str.length()-1;i=0;i--;){\r\n   System.out.println(str.charAt(i));\r\n }\r\n \r\n }\r\n"
+                },
+                {
+                    "date": 1781594564218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,14 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n String str=\"hello java\";\r\n+String rev=\"\";\r\n+for(int i<str.length()-1;i>=0;i--;){\r\n \r\n-for(int i<str.length()-1;i=0;i--;){\r\n-  System.out.println(str.charAt(i));\r\n-}\r\n+  System.out.println(`rev  +str.charAt(i)`);\r\n \r\n }\r\n+System.out.println(str);\r\n+System.out.println(rev);\r\n+}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781594587347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n String str=\"hello java\";\r\n String rev=\"\";\r\n for(int i<str.length()-1;i>=0;i--;){\r\n \r\n-  System.out.println(`rev  +str.charAt(i)`);\r\n+  System.out.println(`${rev}  +str.charAt(i)`);\r\n \r\n }\r\n System.out.println(str);\r\n System.out.println(rev);\r\n"
+                },
+                {
+                    "date": 1781594639066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n String str=\"hello java\";\r\n String rev=\"\";\r\n for(int i<str.length()-1;i>=0;i--;){\r\n \r\n-  System.out.println(`${rev}  +str.charAt(i)`);\r\n-\r\n+System.out.println(rev + str.charAt(i));\r\n }\r\n System.out.println(str);\r\n System.out.println(rev);\r\n }\r\n"
                 }
             ],
             "date": 1781412791985,
