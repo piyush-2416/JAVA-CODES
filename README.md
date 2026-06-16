@@ -17,3 +17,8 @@ compile using java
 Run using java 
 <h1><br>Authod</br></h1>
 DEveloped by Piyush verma
+
+<h1><br>Daily changes</br></h1>
+*16-6-26->
+-learn the string builder and methods
+-learn which method what doing
