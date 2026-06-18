@@ -24,7 +24,8 @@ DEveloped by Piyush verma
 -learn which method what doing.
 <br><hr>
 *18-6-26->
--Prectice on string questions like Anagrams,palindrome,reverse,Largest number,smallest number .
+-Prectice on string questions like Anagrams,palindrome,reverse,Largest number,smallest number.
+<br>
 -I think my logic build increasing.<img width="498" height="441" alt="KmoneyKmoney69GIF" src="https://github.com/user-attachments/assets/4531d72f-f225-4b71-9b6f-8bf76a017ec4" />
 
 
