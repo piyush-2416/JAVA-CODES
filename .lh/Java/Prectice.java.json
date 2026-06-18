@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 48,
+            "activePatchIndex": 108,
             "patches": [
                 {
                     "date": 1781412791985,
@@ -200,6 +200,246 @@
                 {
                     "date": 1781594639066,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n String str=\"hello java\";\r\n String rev=\"\";\r\n for(int i<str.length()-1;i>=0;i--;){\r\n \r\n-  System.out.println(`${rev}  +str.charAt(i)`);\r\n-\r\n+System.out.println(rev + str.charAt(i));\r\n }\r\n System.out.println(str);\r\n System.out.println(rev);\r\n }\r\n"
+                },
+                {
+                    "date": 1781678105330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import java.lang.reflect.Array;\r\n+import java.util.Arrays;\r\n+\r\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+public static void main(String[] args) {\r\n+\r\n+String s1=\"silent\";\r\n+String s2=\"listen\";\r\n+\r\n+char[] arr1=s1.toCharArray();\r\n+char[] arr2=s2.toCharArray();\r\n+\r\n+Arrays.sort(arr1);\r\n+Arrays.sort(arr2);\r\n+\r\n+if(Arrays.equals(arr1, arr2));\r\n+\r\n+}\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781678149273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,13 @@\n \r\n Arrays.sort(arr1);\r\n Arrays.sort(arr2);\r\n \r\n-if(Arrays.equals(arr1, arr2));\r\n+if(Arrays.equals(arr1, arr2)){\r\n+    System.out.println(\"Anagrams\");\r\n \r\n+}else{\r\n+    System.out.println(\"NO\");\r\n }\r\n+\r\n+}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781678174528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n String s1=\"silent\";\r\n-String s2=\"listen\";\r\n+String s2=\"dog\";\r\n \r\n char[] arr1=s1.toCharArray();\r\n char[] arr2=s2.toCharArray();\r\n \r\n"
+                },
+                {
+                    "date": 1781681654597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,22 +5,12 @@\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n-String s1=\"silent\";\r\n-String s2=\"dog\";\r\n+int[] num={10,20,30,40};\r\n+for(int i=0;i<num.length();i++){\r\n+System.out.println(num[i]+num[i]);\r\n+}\r\n \r\n-char[] arr1=s1.toCharArray();\r\n-char[] arr2=s2.toCharArray();\r\n \r\n-Arrays.sort(arr1);\r\n-Arrays.sort(arr2);\r\n-\r\n-if(Arrays.equals(arr1, arr2)){\r\n-    System.out.println(\"Anagrams\");\r\n-\r\n-}else{\r\n-    System.out.println(\"NO\");\r\n }\r\n-\r\n-}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781681668183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n int[] num={10,20,30,40};\r\n-for(int i=0;i<num.length();i++){\r\n+for(int i=0;i<=num.length();i++){\r\n System.out.println(num[i]+num[i]);\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1781681699750,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n int[] num={10,20,30,40};\r\n-for(int i=0;i<=num.length();i++){\r\n+for(int i=0;i>num.length;i++){\r\n System.out.println(num[i]+num[i]);\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1781681709818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n public static void main(String[] args) {\r\n \r\n int[] num={10,20,30,40};\r\n-for(int i=0;i>num.length;i++){\r\n+for(int i=0;i>num.length();i++){\r\n System.out.println(num[i]+num[i]);\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1781681802222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,19 @@\n \r\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n+public class Main {\r\n+    public static void main(String[] args) {\r\n \r\n-int[] num={10,20,30,40};\r\n-for(int i=0;i>num.length();i++){\r\n-System.out.println(num[i]+num[i]);\r\n-}\r\n+        int[] arr = {1, 2, 3, 4};\r\n \r\n+        int sum = 0;\r\n \r\n+        for(int i = 0; i < arr.length; i++) {\r\n+            sum += arr[i];\r\n+        }\r\n+\r\n+        System.out.println(\"Sum = \" + sum);\r\n+    }\r\n }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781681825770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n public class Prectice {\r\n     // Online Java Compiler\r\n // Use this editor to write, compile and run your Java code online\r\n-public class Main {\r\n+\r\n     public static void main(String[] args) {\r\n \r\n         int[] arr = {1, 2, 3, 4};\r\n \r\n@@ -17,5 +17,4 @@\n \r\n         System.out.println(\"Sum = \" + sum);\r\n     }\r\n }\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1781681940177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,28 +8,13 @@\n     public static void main(String[] args) {\r\n \r\n         int[] arr = {1, 2, 3, 4};\r\n \r\n-        int sum = 0;\r\n+        int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n-            sum += arr[i];\r\n+            max += arr[i];\r\n         }\r\n \r\n-        System.out.println(\"Sum = \" + sum);\r\n+        System.out.println(\"MAximum = \" + max );\r\n     }\r\n }\r\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-public static void main(String[] args) {\r\n-\r\n-String str=\"hello java\";\r\n-String rev=\"\";\r\n-for(int i<str.length()-1;i>=0;i--;){\r\n-\r\n-System.out.println(rev + str.charAt(i));\r\n-}\r\n-System.out.println(str);\r\n-System.out.println(rev);\r\n-}\r\n-}\n"
+                },
+                {
+                    "date": 1781682038877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import java.lang.reflect.Array;\r\n+import java.util.Arrays;\r\n+\r\n+public class Prectice {\r\n+    // Online Java Compiler\r\n+// Use this editor to write, compile and run your Java code online\r\n+\r\n+    public static void main(String[] args) {\r\n+\r\n+        int[] arr = {1, 2, 3, 4};\r\n+\r\n+        int max = 0;\r\n+\r\n+        for(int i = 0; i < arr.length; i++) {\r\n+            if(arr[i]>max){\r\n+                max = arr[i];\r\n+                i++;\r\n+            }\r\n+            \r\n+        }\r\n+\r\n+        System.out.println(\"MAximum = \" + max );\r\n+    }\r\n+}\r\n"
+                },
+                {
+                    "date": 1781682058218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n-            if(arr[i]>max){\r\n+            if(arr[i]<max){\r\n                 max = arr[i];\r\n                 i++;\r\n             }\r\n             \r\n"
+                },
+                {
+                    "date": 1781682074183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n         int[] arr = {1, 2, 3, 4};\r\n \r\n         int max = 0;\r\n \r\n-        for(int i = 0; i < arr.length; i++) {\r\n-            if(arr[i]<max){\r\n+        for(int i = 0; i < arr.length-1; i++) {\r\n+            if(arr[i]>max){\r\n                 max = arr[i];\r\n                 i++;\r\n             }\r\n             \r\n"
+                },
+                {
+                    "date": 1781682087698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 3, 4};\r\n+        int[] arr = {1, 2, 5, 4};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length-1; i++) {\r\n"
+                },
+                {
+                    "date": 1781682098458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 5, 4};\r\n+        int[] arr = {1, 2, 4, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length-1; i++) {\r\n"
+                },
+                {
+                    "date": 1781682119896,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,11 +10,11 @@\n         int[] arr = {1, 2, 4, 3};\r\n \r\n         int max = 0;\r\n \r\n-        for(int i = 0; i < arr.length-1; i++) {\r\n+        for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n-                max = arr[i];\r\n+                max == arr[i];\r\n                 i++;\r\n             }\r\n             \r\n         }\r\n"
+                },
+                {
+                    "date": 1781682146010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n-                max == arr[i];\r\n+                max.append(arr[i]);\r\n                 i++;\r\n             }\r\n             \r\n         }\r\n"
+                },
+                {
+                    "date": 1781682182139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max.append(arr[i]);\r\n-                i++;\r\n+                arr[i]++;\r\n             }\r\n             \r\n         }\r\n \r\n"
+                },
+                {
+                    "date": 1781682196901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n-                max.append(arr[i]);\r\n+                max=arr[i];\r\n                 arr[i]++;\r\n             }\r\n             \r\n         }\r\n"
+                },
+                {
+                    "date": 1781682214613,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 4, 3};\r\n+        int[] arr = {1, 2, 0, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781682469796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,13 @@\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n-                arr[i]++;\r\n+                i++;\r\n             }\r\n-            \r\n+            else{\r\n+                System.out.println(max);\r\n+            }\r\n         }\r\n \r\n         System.out.println(\"MAximum = \" + max );\r\n     }\r\n"
+                },
+                {
+                    "date": 1781682487767,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 0, 3};\r\n+        int[] arr = {1, 2, 7, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n@@ -23,24 +23,4 @@\n \r\n         System.out.println(\"MAximum = \" + max );\r\n     }\r\n }\r\n-import java.lang.reflect.Array;\r\n-import java.util.Arrays;\r\n-\r\n-public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-\r\n-    public static void main(String[] args) {\r\n-\r\n-        int[] arr = {1, 2, 3, 4};\r\n-\r\n-        int max = 0;\r\n-\r\n-        for(int i = 0; i < arr.length; i++) {\r\n-            max += arr[i];\r\n-        }\r\n-\r\n-        System.out.println(\"MAximum = \" + max );\r\n-    }\r\n-}\r\n"
+                },
+                {
+                    "date": 1781682496682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 7, 3};\r\n+        int[] arr = {1, 2, 9, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781682503137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {1, 2, 9, 3};\r\n+        int[] arr = {7, 2, 1, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781682533057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,14 +13,14 @@\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n+                System.out.println(max);\r\n                 i++;\r\n             }\r\n             else{\r\n                 System.out.println(max);\r\n             }\r\n         }\r\n \r\n-        System.out.println(\"MAximum = \" + max );\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781682551202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,17 +6,17 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {7, 2, 1, 3};\r\n+        int[] arr = {9, 2, 1, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n                 System.out.println(max);\r\n-                i++;\r\n+                // i++;\r\n             }\r\n             else{\r\n                 System.out.println(max);\r\n             }\r\n"
+                },
+                {
+                    "date": 1781682582664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {9, 2, 1, 3};\r\n+        int[] arr = {9, 2, 1,6,4,19, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781682670539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n                 System.out.println(max);\r\n-                // i++;\r\n+                i++;\r\n             }\r\n             else{\r\n                 System.out.println(max);\r\n             }\r\n"
+                },
+                {
+                    "date": 1781682711522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 System.out.println(max);\r\n                 i++;\r\n             }\r\n             else{\r\n-                System.out.println(max);\r\n+                System.out.println(arr[i]);\r\n             }\r\n         }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1781682741121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,13 @@\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n-                System.out.println(max);\r\n+                System.out.println(\"if\"+max);\r\n                 i++;\r\n             }\r\n             else{\r\n-                System.out.println(arr[i]);\r\n+                System.out.println(\"else\"+arr[i]);\r\n             }\r\n         }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1781682787955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,13 +13,13 @@\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n                 max=arr[i];\r\n-                System.out.println(\"if\"+max);\r\n+                System.out.println(\"if\"+  max);\r\n                 i++;\r\n             }\r\n             else{\r\n-                System.out.println(\"else\"+arr[i]);\r\n+                System.out.println(\"else\"+   arr[i]);\r\n             }\r\n         }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1781682800056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 System.out.println(\"if\"+  max);\r\n                 i++;\r\n             }\r\n             else{\r\n-                System.out.println(\"else\"+   arr[i]);\r\n+                System.out.println(\"else\"+  max);\r\n             }\r\n         }\r\n \r\n     }\r\n"
+                },
+                {
+                    "date": 1781682818350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,11 +16,11 @@\n                 max=arr[i];\r\n                 System.out.println(\"if\"+  max);\r\n                 i++;\r\n             }\r\n-            else{\r\n-                System.out.println(\"else\"+  max);\r\n-            }\r\n+            // else{\r\n+            //     System.out.println(\"else\"+  max);\r\n+            // }\r\n         }\r\n \r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781682851461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n-                max=arr[i];\r\n+                // max=arr[i];\r\n                 System.out.println(\"if\"+  max);\r\n                 i++;\r\n             }\r\n             // else{\r\n"
+                },
+                {
+                    "date": 1781682867754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,11 @@\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n             if(arr[i]>max){\r\n-                // max=arr[i];\r\n+                max=arr[i];\r\n                 System.out.println(\"if\"+  max);\r\n-                i++;\r\n+                // i++;\r\n             }\r\n             // else{\r\n             //     System.out.println(\"else\"+  max);\r\n             // }\r\n"
+                },
+                {
+                    "date": 1781682947479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {9, 2, 1,6,4,19, 3};\r\n+        int[] arr = {9, 92, 1,6,4,79, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781682969482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {9, 92, 1,6,4,79, 3};\r\n+        int[] arr = {0, 92, 1,6,4,79, 3};\r\n \r\n         int max = 0;\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781684229773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n                 max=arr[i];\r\n                 System.out.println(\"if\"+  max);\r\n                 // i++;\r\n             }\r\n+            System.out.println(arr[0]);\r\n             // else{\r\n             //     System.out.println(\"else\"+  max);\r\n             // }\r\n         }\r\n"
+                },
+                {
+                    "date": 1781684245998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,12 @@\n                 max=arr[i];\r\n                 System.out.println(\"if\"+  max);\r\n                 // i++;\r\n             }\r\n-            System.out.println(arr[0]);\r\n+          \r\n             // else{\r\n             //     System.out.println(\"else\"+  max);\r\n             // }\r\n         }\r\n-\r\n+  System.out.println(arr[0]);\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684261650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n             // else{\r\n             //     System.out.println(\"else\"+  max);\r\n             // }\r\n         }\r\n-  System.out.println(arr[0]);\r\n+  System.out.println(arr[2]);\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684274985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,7 +21,7 @@\n             // else{\r\n             //     System.out.println(\"else\"+  max);\r\n             // }\r\n         }\r\n-  System.out.println(arr[2]);\r\n+  System.out.println(arr[4]);\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684531902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,22 +6,13 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {0, 92, 1,6,4,79, 3};\r\n+        int[] arr = {2,4,6,7,8,1};\r\n \r\n-        int max = 0;\r\n-\r\n+        int max =arr[3];\r\n+System.out.println(max);\r\n         for(int i = 0; i < arr.length; i++) {\r\n-            if(arr[i]>max){\r\n-                max=arr[i];\r\n-                System.out.println(\"if\"+  max);\r\n-                // i++;\r\n-            }\r\n-          \r\n-            // else{\r\n-            //     System.out.println(\"else\"+  max);\r\n-            // }\r\n+         System.out.println(arr[4]);\r\n         }\r\n-  System.out.println(arr[4]);\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684556747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,7 +12,8 @@\n         int max =arr[3];\r\n System.out.println(max);\r\n         for(int i = 0; i < arr.length; i++) {\r\n          System.out.println(arr[4]);\r\n+         break;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684732835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,16 @@\n     public static void main(String[] args) {\r\n \r\n         int[] arr = {2,4,6,7,8,1};\r\n \r\n-        int max =arr[3];\r\n-System.out.println(max);\r\n+        int min =arr[0];\r\n+\r\n         for(int i = 0; i < arr.length; i++) {\r\n-         System.out.println(arr[4]);\r\n+         if(min<arr[i]){\r\n+            System.out.println(\"minimum\");\r\n+         }else{\r\n+            System.out.println(min);\r\n+         }\r\n          break;\r\n         }\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781684754104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,10 @@\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n          if(min<arr[i]){\r\n-            System.out.println(\"minimum\");\r\n+            System.out.println(\"minimum\"+ min);\r\n+            i++;\r\n          }else{\r\n             System.out.println(min);\r\n          }\r\n          break;\r\n"
+                },
+                {
+                    "date": 1781684776876,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n \r\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n-         if(min<arr[i]){\r\n-            System.out.println(\"minimum\"+ min);\r\n+         if(min>arr[i]){\r\n+            System.out.println(\"minimum\"+ min );\r\n             i++;\r\n          }else{\r\n             System.out.println(min);\r\n          }\r\n"
+                },
+                {
+                    "date": 1781685345703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,14 +11,11 @@\n \r\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n-         if(min>arr[i]){\r\n-            System.out.println(\"minimum\"+ min );\r\n-            i++;\r\n-         }else{\r\n-            System.out.println(min);\r\n-         }\r\n-         break;\r\n-        }\r\n+         if(arr[i]>min){\r\n+            min=arr[i];\r\n+\r\n+         }}\r\n+         System.out.println(min);\r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781685378109,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n-         if(arr[i]>min){\r\n+         if(arr[i]<min){\r\n             min=arr[i];\r\n \r\n          }}\r\n          System.out.println(min);\r\n"
+                },
+                {
+                    "date": 1781685397997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {2,4,6,7,8,1};\r\n+        int[] arr = {90,4,6,7,8};\r\n \r\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781685411982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {90,4,6,7,8};\r\n+        int[] arr = {90,40,6,7,8};\r\n \r\n         int min =arr[0];\r\n \r\n         for(int i = 0; i < arr.length; i++) {\r\n"
+                },
+                {
+                    "date": 1781686368919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,16 +6,23 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] arr = {90,40,6,7,8};\r\n+        int[] num = {9,0,0,3,2,0,1,5};\r\n \r\n-        int min =arr[0];\r\n+    int zero=arr[];//or zero=\"\";\r\n+    int alldigit=arr[];\r\n+    for(int i=0;i<num.length;i++){\r\n+        if(num[i]=0){\r\n+     num[i]=zero;\r\n \r\n-        for(int i = 0; i < arr.length; i++) {\r\n-         if(arr[i]<min){\r\n-            min=arr[i];\r\n+        }\r\n+        else if(num[i]<0){\r\n+            num[i]=alldigit;\r\n \r\n-         }}\r\n-         System.out.println(min);\r\n+        }\r\n+        System.out.println(alldigit + zero);\r\n     }\r\n+\r\n+       \r\n+    }\r\n }\r\n"
+                },
+                {
+                    "date": 1781686399056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     public static void main(String[] args) {\r\n \r\n         int[] num = {9,0,0,3,2,0,1,5};\r\n \r\n-    int zero=arr[];//or zero=\"\";\r\n-    int alldigit=arr[];\r\n+    int zero=\"\";//or zero=\"\";\r\n+    int alldigit=\"\";\r\n     for(int i=0;i<num.length;i++){\r\n         if(num[i]=0){\r\n      num[i]=zero;\r\n \r\n"
+                },
+                {
+                    "date": 1781686453068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     public static void main(String[] args) {\r\n \r\n         int[] num = {9,0,0,3,2,0,1,5};\r\n \r\n-    int zero=\"\";//or zero=\"\";\r\n-    int alldigit=\"\";\r\n+    int zero=num[];\r\n+    int alldigit=num[];\r\n     for(int i=0;i<num.length;i++){\r\n         if(num[i]=0){\r\n      num[i]=zero;\r\n \r\n"
+                },
+                {
+                    "date": 1781686485652,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     public static void main(String[] args) {\r\n \r\n         int[] num = {9,0,0,3,2,0,1,5};\r\n \r\n-    int zero=num[];\r\n-    int alldigit=num[];\r\n+    int zero=num[]\r\n+    int alldigit=num[]\r\n     for(int i=0;i<num.length;i++){\r\n         if(num[i]=0){\r\n      num[i]=zero;\r\n \r\n"
+                },
+                {
+                    "date": 1781686781741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n     public static void main(String[] args) {\r\n \r\n         int[] num = {9,0,0,3,2,0,1,5};\r\n \r\n-    int zero=num[]\r\n-    int alldigit=num[]\r\n+    int zero=0;\r\n+    int alldigit=0;\r\n     for(int i=0;i<num.length;i++){\r\n         if(num[i]=0){\r\n      num[i]=zero;\r\n \r\n"
+                },
+                {
+                    "date": 1781686792406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n     int zero=0;\r\n     int alldigit=0;\r\n     for(int i=0;i<num.length;i++){\r\n-        if(num[i]=0){\r\n+        if(num[i]==0){\r\n      num[i]=zero;\r\n \r\n         }\r\n         else if(num[i]<0){\r\n"
+                },
+                {
+                    "date": 1781756716895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,23 +6,17 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-        int[] num = {9,0,0,3,2,0,1,5};\r\n-\r\n-    int zero=0;\r\n-    int alldigit=0;\r\n-    for(int i=0;i<num.length;i++){\r\n-        if(num[i]==0){\r\n-     num[i]=zero;\r\n-\r\n-        }\r\n-        else if(num[i]<0){\r\n-            num[i]=alldigit;\r\n-\r\n-        }\r\n-        System.out.println(alldigit + zero);\r\n+  String str=\"anagrams\";\r\n+  int start=0;\r\n+  int end=str.length()-1;\r\n+  for(int i=end;i<start;i++){\r\n+    if(start.charAt(i)==end.charAt(i)){\r\n+        System.out.println(\"anagrams\");\r\n+    }else{\r\n+        System.out.println(\"No\");\r\n     }\r\n-\r\n+  }\r\n        \r\n     }\r\n }\r\n"
+                },
+                {
+                    "date": 1781756723312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n // Use this editor to write, compile and run your Java code online\r\n \r\n     public static void main(String[] args) {\r\n \r\n-  String str=\"anagrams\";\r\n+  String str=\"anagram\";\r\n   int start=0;\r\n   int end=str.length()-1;\r\n   for(int i=end;i<start;i++){\r\n     if(start.charAt(i)==end.charAt(i)){\r\n"
+                },
+                {
+                    "date": 1781756810580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   String str=\"anagram\";\r\n   int start=0;\r\n   int end=str.length()-1;\r\n   for(int i=end;i<start;i++){\r\n-    if(start.charAt(i)==end.charAt(i)){\r\n+    if(start.CharAt(i)==end.CharAt(i)){\r\n         System.out.println(\"anagrams\");\r\n     }else{\r\n         System.out.println(\"No\");\r\n     }\r\n"
+                },
+                {
+                    "date": 1781756833550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   String str=\"anagram\";\r\n   int start=0;\r\n   int end=str.length()-1;\r\n   for(int i=end;i<start;i++){\r\n-    if(start.CharAt(i)==end.CharAt(i)){\r\n+    if(start.charAt(i)==end.charAt(i)){\r\n         System.out.println(\"anagrams\");\r\n     }else{\r\n         System.out.println(\"No\");\r\n     }\r\n"
                 }
             ],
             "date": 1781412791985,

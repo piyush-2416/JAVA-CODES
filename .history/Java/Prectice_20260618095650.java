@@ -11,7 +11,7 @@ public class Prectice {
   int start=0;
   int end=str.length()-1;
   for(int i=end;i<start;i++){
-    if(start.charAt(i)==end.charAt(i)){
+    if(start.CharAt(i)==end.CharAt(i)){
         System.out.println("anagrams");
     }else{
         System.out.println("No");

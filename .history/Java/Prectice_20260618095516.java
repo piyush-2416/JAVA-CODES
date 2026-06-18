@@ -7,7 +7,7 @@ public class Prectice {
 
     public static void main(String[] args) {
 
-  String str="anagram";
+  String str="anagrams";
   int start=0;
   int end=str.length()-1;
   for(int i=end;i<start;i++){
