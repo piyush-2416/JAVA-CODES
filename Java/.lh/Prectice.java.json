@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Prectice.java",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1782235993685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1782236133241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,41 +1,24 @@\n import java.lang.reflect.Array;\r\n import java.util.Arrays;\r\n \r\n public class Prectice {\r\n-    // Online Java Compiler\r\n-// Use this editor to write, compile and run your Java code online\r\n-\r\n+   \r\n     public static void main(String[] args) {\r\n-// String str=\"acaabd\";\r\n-// for(int i=0;i<str.length();i++) {\r\n-//     String count=str.charAt(0);\r\n \r\n-//     if(count!=str.charAt(i)){\r\n-//         count=str.charAt(i);    ////for non reapeated charecter\r\n-// System.out.println(count);\r\n-//     }\r\n-//     else{\r\n-//         i++;\r\n+        int[] arr = {10, 20, 30, 40, 50};\r\n \r\n-//     }\r\n-// }\r\n-int [] num={16,17,4,3,5,2};\r\n-int start=0;\r\n-int end=num.length();\r\n-int greater =num.charAt(5);\r\n-for(int i=end;i<start;i++){\r\n-    if(greater<=num.charAt(i)){\r\n-        greater=num.charAt(i);\r\n+        int start = 0;\r\n+        int end = arr.length - 1;\r\n \r\n-    }else if(greater>num.charAt(i)){\r\n-        int delete=num.charAt(i);\r\n+        while (start < end) {\r\n+            int temp = arr[start];\r\n+            arr[start] = arr[end];\r\n+            arr[end] = temp;\r\n \r\n+            start++;\r\n+            end--;\r\n+        }\r\n+\r\n+        System.out.println(Arrays.toString(arr));\r\n     }\r\n-    else{\r\n-        num.charAt(i);\r\n-    }\r\n-    System.out.println(greater);\r\n }\r\n-       \r\n-    }\r\n-}\r\n"
+                }
+            ],
+            "date": 1782235993684,
+            "name": "Commit-0",
+            "content": "import java.lang.reflect.Array;\r\nimport java.util.Arrays;\r\n\r\npublic class Prectice {\r\n    // Online Java Compiler\r\n// Use this editor to write, compile and run your Java code online\r\n\r\n    public static void main(String[] args) {\r\n// String str=\"acaabd\";\r\n// for(int i=0;i<str.length();i++) {\r\n//     String count=str.charAt(0);\r\n\r\n//     if(count!=str.charAt(i)){\r\n//         count=str.charAt(i);    ////for non reapeated charecter\r\n// System.out.println(count);\r\n//     }\r\n//     else{\r\n//         i++;\r\n\r\n//     }\r\n// }\r\nint [] num={16,17,4,3,5,2};\r\nint start=0;\r\nint end=num.length();\r\nint greater =num.charAt(5);\r\nfor(int i=end;i<start;i++){\r\n    if(greater<=num.charAt(i)){\r\n        greater=num.charAt(i);\r\n\r\n    }else if(greater>num.charAt(i)){\r\n        int delete=num.charAt(i);\r\n\r\n    }\r\n    else{\r\n        num.charAt(i);\r\n    }\r\n    System.out.println(greater);\r\n}\r\n       \r\n    }\r\n}\r\n"
+        }
+    ]
+}
