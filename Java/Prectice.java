@@ -3,22 +3,24 @@ import java.util.Arrays;
 
 public class Prectice {
    
-    public static void main(String[] args) {
+     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 30, 40, 50};
+        int[] arr = {10, 5, 20, 8, 15};
 
-        int start = 0;
-        int end = arr.length - 1;
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
 
-        while (start < end) {
-            int temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+        for (int num : arr) {
 
-            start++;
-            end--;
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            }
+            else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
         }
 
-        System.out.println(Arrays.toString(arr));
+        System.out.println("Second Largest Element: " + secondLargest);
     }
 }
