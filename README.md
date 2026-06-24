@@ -28,5 +28,9 @@ DEveloped by Piyush verma
 <br>
 -I think my logic build increasing.<img width="498" height="441" alt="KmoneyKmoney69GIF" src="https://github.com/user-attachments/assets/4531d72f-f225-4b71-9b6f-8bf76a017ec4" />
 
-
+*23-6-26->
+-Learn and prectices on the arrays inwhich problems added with some methods.
+<br/>
+*24-6-26
+-Todays Also Learn and prectices on the  arrays inwhich some problems like largest elements and second largest elements and some more problems thats are made me undersatnding the arrays overview <br/>this is son impresive concept of java programming.
 
