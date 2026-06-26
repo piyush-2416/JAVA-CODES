@@ -33,4 +33,6 @@ DEveloped by Piyush verma
 <br/>
 *24-6-26
 -Todays Also Learn and prectices on the  arrays inwhich some problems like largest elements and second largest elements and some more problems thats are made me undersatnding the arrays overview <br/>this is son impresive concept of java programming.
-
+<br/>
+*26-6-26
+-Todays Also Learn about the arrays but today i had to go on next level in arrays like smallest elements and second smallest elements .this is so amazing like understand the arrays with different different problems and tasks and its helps to improve the logics bulid .
