@@ -1,26 +1,22 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Prectice {
-   
-     public static void main(String[] args) {
+public class SmallestElement {
+    public static void main(String[] args) {
 
-        int[] arr = {10, 5, 20, 8, 15};
+        int[] arr = {25, 8, 45, 10, 30};
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+        int smallest = arr[0];
 
         for (int num : arr) {
 
-            if (num > largest) {
-                secondLargest = largest;
-                largest = num;
+            if (num < smallest) {
+                smallest = num;
             }
-            else if (num > secondLargest && num != largest) {
-                secondLargest = num;
-            }
+
         }
 
-        System.out.println("Second Largest Element: " + secondLargest);
+        System.out.println("Smallest Element = " + smallest);
+
     }
 }
