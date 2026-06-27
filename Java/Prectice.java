@@ -1,22 +1,32 @@
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class SmallestElement {
-    public static void main(String[] args) {
+public class Prectice {
 
-        int[] arr = {25, 8, 45, 10, 30};
+  public static void main(String[] args) {
+   int[] arr = {1, 2, 4, 16, 17};
 
-        int smallest = arr[0];
+Arrays.sort(arr);
 
-        for (int num : arr) {
+int largest = arr[arr.length - 1];
 
-            if (num < smallest) {
-                smallest = num;
-            }
+for (int i = 1; i <= largest; i++) {
 
-        }
+boolean found = false;
 
-        System.out.println("Smallest Element = " + smallest);
+for (int j = 0; j < arr.length; j++) {
 
-    }
+if (arr[j] == i) {
+found = true;
+break;
 }
+}
+
+if (!found) {
+System.out.println(i);
+}
+} 
+
+  }
+}
+ 
