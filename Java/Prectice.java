@@ -1,32 +1,26 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
+public class Main {
+    public static void main(String[] args) {
 
-public class Prectice {
+        int[] arr = {2, 3, 2, 5, 3, 2};
 
-  public static void main(String[] args) {
-   int[] arr = {1, 2, 4, 16, 17};
+        boolean[] visited = new boolean[arr.length];
 
-Arrays.sort(arr);
+        for (int i = 0; i < arr.length; i++) {
 
-int largest = arr[arr.length - 1];
+            if (visited[i])
+                continue;
 
-for (int i = 1; i <= largest; i++) {
+            int count = 1;
 
-boolean found = false;
+            for (int j = i + 1; j < arr.length; j++) {
 
-for (int j = 0; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                    visited[j] = true;
+                }
+            }
 
-if (arr[j] == i) {
-found = true;
-break;
+            System.out.println(arr[i] + " -> " + count);
+        }
+    }
 }
-}
-
-if (!found) {
-System.out.println(i);
-}
-} 
-
-  }
-}
- 
