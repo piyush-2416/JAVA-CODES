@@ -38,3 +38,5 @@ DEveloped by Piyush verma
 -Todays Also Learn about the arrays but today i had to go on next level in arrays like smallest elements and second smallest elements .this is so amazing like understand the arrays with different different problems and tasks and its helps to improve the logics bulid .
 *27-6-26
 Todays also prectice on Array's problems like Find Missing Element in the arrays and some more problem feels amazing and logical.
+*28-6-26
+Todays also prectice on Array's problems like Find Frequncy of Arrays elements using Nested loops.And completed the mostly problem which are important for every problems .
