@@ -40,3 +40,5 @@ DEveloped by Piyush verma
 Todays also prectice on Array's problems like Find Missing Element in the arrays and some more problem feels amazing and logical.
 *28-6-26
 Todays also prectice on Array's problems like Find Frequncy of Arrays elements using Nested loops.And completed the mostly problem which are important for every problems .
+*5-7-26
+After some time I am focusing on the 2d Arrays .
