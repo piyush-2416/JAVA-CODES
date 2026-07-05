@@ -1,26 +1,25 @@
-public class Main {
-    public static void main(String[] args) {
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
-        int[] arr = {2, 3, 2, 5, 3, 2};
+public class Prectice {
+public static void main(String[] args) {  
+   int[][]arr={{1,2,3},{3,2,1}};
+   int sum1=0;
+   int sum2=0;
+   int max=0;
+   for(int i=0;i<arr.length;i++){
+  for(int j=0;j<arr[i].length;j++){
+   System.out.println(Arrays.toString(arr[j])); 
 
-        boolean[] visited = new boolean[arr.length];
+  }   
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if (visited[i])
-                continue;
-
-            int count = 1;
-
-            for (int j = i + 1; j < arr.length; j++) {
-
-                if (arr[i] == arr[j]) {
-                    count++;
-                    visited[j] = true;
-                }
-            }
-
-            System.out.println(arr[i] + " -> " + count);
-        }
-    }
+ 
+   }
 }
+          
+      
+ 
+}
+
+ 
+
