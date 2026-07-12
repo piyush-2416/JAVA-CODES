@@ -1,15 +1,29 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class Main {
+public class Practice {
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
 
         ArrayList<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < 5; i++) {
-            list.add(sc.nextInt());
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+
+        int start = 0;
+        int end = list.size() - 1;
+
+        while (start < end) {
+
+            int temp = list.get(start);
+
+            list.set(start, list.get(end));
+
+            list.set(end, temp);
+
+            start++;
+            end--;
         }
 
         System.out.println(list);
