@@ -1,33 +1,17 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-public class Prectice {
+public class Main {
     public static void main(String[] args) {
-        int[] arr = { 1, 7, 5, 1, 3 };
-        int largest = arr[0];
-        int extra = 3;
-        boolean[] newarr = new boolean[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > largest) {
-                largest = arr[i];}
 
-            }
-            for(int i=0;i<arr.length;i++){
+        Scanner sc = new Scanner(System.in);
 
-            
-                int Add = arr[i] + extra;
+        ArrayList<Integer> list = new ArrayList<>();
 
-                if (Add >= largest) {
-                    System.out.println(newarr[i] = true );
-                    System.out.println(arr[i]);
-
-                }else if(Add<largest){
-                    newarr[i]=false;
-                    System.out.println(newarr[i]);
-                    System.out.println(arr[i]);
-                }
-            }
+        for (int i = 0; i < 5; i++) {
+            list.add(sc.nextInt());
         }
 
+        System.out.println(list);
     }
-
+}
