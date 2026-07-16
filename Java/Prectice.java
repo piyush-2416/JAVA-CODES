@@ -1,31 +1,23 @@
-import java.util.ArrayList;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
-public class Practice {
-    public static void main(String[] args) {
+public class Prectice {
+  public static void main(String[] args) {
+    int[] arr = { 3,5,2,6,7 };
 
-        ArrayList<Integer> list = new ArrayList<>();
+    for (int i = 0; i < arr.length ; i++) {
+      for (int j = i + 1; j < arr.length; j++) {
+        if (arr[i]%2!= 0) {
+          int temp = arr[i];
+          arr[i] = arr[j];
+          arr[j] = temp;
 
-        list.add(10);
-        list.add(20);
-        list.add(30);
-        list.add(40);
-        list.add(50);
-
-        int start = 0;
-        int end = list.size() - 1;
-
-        while (start < end) {
-
-            int temp = list.get(start);
-
-            list.set(start, list.get(end));
-
-            list.set(end, temp);
-
-            start++;
-            end--;
         }
 
-        System.out.println(list);
+      }
+      System.out.println(arr[i]);
+
     }
+
+  }
 }
